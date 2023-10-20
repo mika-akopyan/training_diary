@@ -1,0 +1,86 @@
+    #     '//Изменение мышечной группы
+    #     Public Sub MuscleGroup_Change(ByRef Muscles As Muscles, ByRef Exercises As Exercises, ByRef Muscle As Muscle, ByRef Exercise As Exercise)
+    #
+    #                 '//ПРОВЕРКА ТОГО, КАК ЗАПОЛНЯТЬ ДАННЫЕ
+    #                 If Sport.w_cmb_muscle_group.Text = "" Then
+    #                     '//ЗАПОЛНЕНИЕ ДАННЫХ, ЕСЛИ ЗНАЧЕНИЕ В КОМБОБОКСЕ МЫШЕЧНАЯ ГРУППА ПУСТО
+    #                     '//МЫШЕЧНАЯ ГРУППА
+    #                     Me.Name = ""
+    #
+    #                     '//МЫШЦА
+    #                     '//Очищение комбобокса от значений
+    #                     Sport.w_cmb_muscle.ResetText()
+    #
+    #                     Muscles.Items.Clear()
+    #                     Muscles.FormItems()
+    #
+    #                     '//УПРАЖНЕНИЕ
+    #                     '//Очищение комбобокса от значений
+    #                     Sport.w_cmb_exercise.ResetText()
+    #
+    #                     Exercises.Items.Clear()
+    #                     Exercises.FormItems()
+    #                 Else
+    #                     '//ЗАПОЛНЕНИЕ ДАННЫХ, ЕСЛИ ЗНАЧЕНИЕ В КОМБОБОКСЕ МЫШЕЧНАЯ ГРУППА НЕ ПУСТО
+    #                     '//МЫШЕЧНАЯ ГРУППА
+    #                     Me.Name = Sport.w_cmb_muscle_group.Text
+    #
+    #                     '//МЫШЦА
+    #                     '//ПРОВЕРКА ТОГО, КАК ЗАПОЛНЯТЬ ДАННЫЕ
+    #                     If Sport.w_cmb_muscle.Text = "" Then
+    #                         '//ЗАПОЛНЕНИЕ ДАННЫХ, ЕСЛИ ЗНАЧЕНИЕ В КОМБОБОКСЕ МЫШЦА ПУСТО
+    #                         '//Очищение комбобокса от значений
+    #                         Sport.w_cmb_muscle.ResetText()
+    #
+    #                         Muscles.Items.Clear()
+    #                         Muscles.FormItems()
+    #                     Else
+    #                         '//ЗАПОЛНЕНИЕ ДАННЫХ, ЕСЛИ ЗНАЧЕНИЕ В КОМБОБОКСЕ МЫШЦА НЕ ПУСТО
+    #                         If Sport.w_cmb_muscle_group.Text <> Muscle.Parent.Name Then
+    #                             '//ЗАПОЛНЕНИЕ ДАННЫХ, ЕСЛИ ВЫБРАННЫЙ ДО ЭТОГО МЫШЦА НЕ СООТВЕТСВУЕТ МЫШЕЧНОЙ ГРУППЕ
+    #                             '//Очищение комбобокса от значений
+    #                             Sport.w_cmb_muscle.ResetText()
+    #
+    #                             Muscles.Items.Clear()
+    #                             Muscles.FormItems()
+    #                         End If
+    #                     End If
+    #
+    #                     '//УПРАЖНЕНИЕ
+    #                     '//ПРОВЕРКА ТОГО, КАК ЗАПОЛНЯТЬ ДАННЫЕ
+    #                     If Sport.w_cmb_exercise.Text = "" Then
+    #                         '//ЗАПОЛНЕНИЕ ДАННЫХ, ЕСЛИ ЗНАЧЕНИЕ В КОМБОБОКСЕ УПРАЖНЕНИЕ ПУСТО
+    #                         '//Очищение комбобокса от значений
+    #                         Sport.w_cmb_exercise.ResetText()
+    #
+    #                         Exercises.Items.Clear()
+    #                         Exercises.FormItems()
+    #                     Else
+    #                         '//ЗАПОЛНЕНИЕ ДАННЫХ, ЕСЛИ ЗНАЧЕНИЕ В КОМБОБОКСЕ УПРАЖНЕНИЕ НЕ ПУСТО
+    #                         If Sport.w_cmb_muscle_group.Text <> Exercise.Parent.Parent.Name Then
+    #                             '//ЗАПОЛНЕНИЕ ДАННЫХ, ЕСЛИ ВЫБРАННЫЙ ДО ЭТОГО УПРАЖНЕНИЕ НЕ СООТВЕТСВУЕТ МЫШЕЧНОЙ ГРУППЕ
+    #                             '//Очищение комбобокса от значений
+    #                             Sport.w_cmb_exercise.ResetText()
+    #
+    #                             Exercises.Items.Clear()
+    #                             Exercises.FormItems()
+    #                         End If
+    #                     End If
+    #                 End If
+    #
+    #                 '//МЫШЦА
+    #                 '//Очищение комбобокса от значений
+    #                 Sport.w_cmb_muscle.Items.Clear()
+    #                 '//Заполнение элемента управления значениями из коллекции
+    #                 For n = 0 To Muscles.Items.Count - 1
+    #                     Sport.w_cmb_muscle.Items.Add(Muscles.Items.Item(n).Name)
+    #                 Next n
+    #
+    #                 '//УПРАЖНЕНИЕ
+    #                 '//Очищение комбобокса от значений
+    #                 Sport.w_cmb_exercise.Items.Clear()
+    #                 '//Заполнение элемента управления значениями из коллекции
+    #                 For n = 0 To Exercises.Items.Count - 1
+    #                     Sport.w_cmb_exercise.Items.Add(Exercises.Items.Item(n).Name)
+    #                 Next n
+    #     End Sub

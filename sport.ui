@@ -1,0 +1,6014 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Sport</class>
+ <widget class="QMainWindow" name="Sport">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1079</width>
+    <height>521</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Bahnschrift</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Спорт</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="f_menu">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>151</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 7px;
+background-color: rgb(55, 122, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="pb_open_close_main_menu">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>131</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:hover{
+	background-color: rgb(0, 85, 255);
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(0, 85, 255);
+	color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icons/PushButton/pb_open_close_main_menu.png</normaloff>icons/PushButton/pb_open_close_main_menu.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>18</width>
+       <height>18</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QFrame" name="f_main_menu">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>70</y>
+       <width>151</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-width: 0px;
+background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QFrame" name="f_auxiliary_menu">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>160</y>
+        <width>151</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="pb_viewing">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>40</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	text-align: left;
+	padding: 5px;
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(55, 122, 255);
+	color: rgb(255, 255, 255);
+}
+
+QPushButton:checked{
+	background-color: rgb(255, 255, 255);
+	color: rgb(55, 122, 255);
+}
+
+QPushButton:checked:hover{
+	border-color: rgb(255, 255, 255);
+	background-color: rgb(255, 255, 255);
+	color: rgb(55, 122, 255);
+}
+
+QPushButton:hover{
+	border-color: rgb(0, 85, 255);
+	background-color: rgb(0, 85, 255);
+	color: rgb(255, 255, 255);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>  Просмотр</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_creature">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>0</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	text-align: left;
+	padding: 5px;
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(55, 122, 255);
+	color: rgb(255, 255, 255);
+}
+
+QPushButton:checked{
+	background-color: rgb(255, 255, 255);
+	color: rgb(55, 122, 255);
+}
+
+QPushButton:checked:hover{
+	border-color: rgb(255, 255, 255);
+	background-color: rgb(255, 255, 255);
+	color: rgb(55, 122, 255);
+}
+
+QPushButton:hover{
+	border-color: rgb(0, 85, 255);
+	background-color: rgb(0, 85, 255);
+	color: rgb(255, 255, 255);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>  Создание</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_statistic">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>80</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	text-align: left;
+	padding: 5px;
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(55, 122, 255);
+	color: rgb(255, 255, 255);
+}
+
+QPushButton:checked{
+	background-color: rgb(255, 255, 255);
+	color: rgb(55, 122, 255);
+}
+
+QPushButton:checked:hover{
+	border-color: rgb(255, 255, 255);
+	background-color: rgb(255, 255, 255);
+	color: rgb(55, 122, 255);
+}
+
+QPushButton:hover{
+	border-color: rgb(0, 85, 255);
+	background-color: rgb(0, 85, 255);
+	color: rgb(255, 255, 255);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>  Статистика</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pb_workout">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	text-align: left;
+	padding: 5px;
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(55, 122, 255);
+	color: rgb(255, 255, 255);
+}
+
+QPushButton:checked{
+	background-color: rgb(255, 255, 255);
+	color: rgb(55, 122, 255);
+}
+
+QPushButton:checked:hover{
+	border-color: rgb(255, 255, 255);
+	background-color: rgb(255, 255, 255);
+	color: rgb(55, 122, 255);
+}
+
+QPushButton:hover{
+	border-color: rgb(0, 85, 255);
+	background-color: rgb(0, 85, 255);
+	color: rgb(255, 255, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>  Тренировка</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons/PushButton/pb_workout_unchecked.png</normaloff>
+        <activeon>icons/PushButton/pb_workout_checked.png</activeon>icons/PushButton/pb_workout_unchecked.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>22</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_home">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	text-align: left;
+	padding: 5px;
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(55, 122, 255);
+	color: rgb(255, 255, 255);
+}
+
+QPushButton:checked{
+	background-color: rgb(255, 255, 255);
+	color: rgb(55, 122, 255);
+}
+
+QPushButton:checked:hover{
+	border-color: rgb(255, 255, 255);
+	background-color: rgb(255, 255, 255);
+	color: rgb(55, 122, 255);
+}
+
+QPushButton:hover{
+	border-color: rgb(0, 85, 255);
+	background-color: rgb(0, 85, 255);
+	color: rgb(255, 255, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>  Главная</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons/PushButton/pb_home_unchecked.png</normaloff>
+        <activeon>icons/PushButton/pb_home_checked.png</activeon>icons/PushButton/pb_home_unchecked.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>22</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_yoga">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	text-align: left;
+	padding: 5px;
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(55, 122, 255);
+	color: rgb(255, 255, 255);
+}
+
+QPushButton:checked{
+	background-color: rgb(255, 255, 255);
+	color: rgb(55, 122, 255);
+}
+
+QPushButton:checked:hover{
+	border-color: rgb(255, 255, 255);
+	background-color: rgb(255, 255, 255);
+	color: rgb(55, 122, 255);
+}
+
+QPushButton:hover{
+	border-color: rgb(0, 85, 255);
+	background-color: rgb(0, 85, 255);
+	color: rgb(255, 255, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>  Йога</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons/PushButton/pb_yoga_unchecked.png</normaloff>
+        <activeon>icons/PushButton/pb_yoga_checked.png</activeon>icons/PushButton/pb_yoga_unchecked.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>22</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_stretching">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	text-align: left;
+	padding: 5px;
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(55, 122, 255);
+	color: rgb(255, 255, 255);
+}
+
+QPushButton:checked{
+	background-color: rgb(255, 255, 255);
+	color: rgb(55, 122, 255);
+}
+
+QPushButton:checked:hover{
+	border-color: rgb(255, 255, 255);
+	background-color: rgb(255, 255, 255);
+	color: rgb(55, 122, 255);
+}
+
+QPushButton:hover{
+	border-color: rgb(0, 85, 255);
+	background-color: rgb(0, 85, 255);
+	color: rgb(255, 255, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>  Растяжка</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons/PushButton/pb_stretching_unchecked.png</normaloff>
+        <activeon>icons/PushButton/pb_stretching_checked.png</activeon>icons/PushButton/pb_stretching_unchecked.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>22</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>10</y>
+      <width>911</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift Condensed</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="home_page">
+     <widget class="QLabel" name="home_l_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>901</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Дневник позволяет фиксировать результаты выполненных тренировок, анализировать и составлять более эффективный план тренинга.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="home_l_12">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>901</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Достичь серьезных результатов без дневника тренировок трудно. Регулярные записи позволяют наглядно видеть ваш прогресс и контролировать состояние организма.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCalendarWidget" name="home_cw_training_schedule">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>230</y>
+        <width>321</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>ForbiddenCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="selectionMode">
+       <enum>QCalendarWidget::NoSelection</enum>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="home_tbl_training_schedule">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>541</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>ForbiddenCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 7px;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(200, 200, 200);
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::NoSelection</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="home_l_training_schedule">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>190</y>
+        <width>162</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Расписание занятий</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="home_l_training_schedule_2">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>190</y>
+        <width>162</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Календарь занятий</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="y_page_creature">
+     <widget class="QPushButton" name="y_pb_save">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>440</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: rgb(55, 122, 255);
+	border-radius: 15px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(55, 122, 255);
+	color: rgb(255, 255, 255);
+}
+
+QPushButton:hover{
+	background-color: rgb(0, 85, 255);
+	border-color: rgb(0, 85, 255);
+	color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Сохранить</string>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="y_gb_stage">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>361</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 7px;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(200, 200, 200);
+background-color: rgb(245, 245, 245);</string>
+      </property>
+      <property name="title">
+       <string>Этап</string>
+      </property>
+      <widget class="QLabel" name="y_l_week_number">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+         <strikeout>false</strikeout>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Неделя №</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="y_l_day_number">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+         <strikeout>false</strikeout>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>День №</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="y_l_date">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>170</y>
+         <width>26</width>
+         <height>14</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+         <strikeout>false</strikeout>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Дата</string>
+       </property>
+      </widget>
+      <widget class="QCalendarWidget" name="y_cw_yoga">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>200</y>
+         <width>321</width>
+         <height>201</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="y_sb_week_number">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>40</y>
+         <width>51</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSpinBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+
+QSpinBox:up-button{
+	image: url(:/(double)SpinBox/icons/(Double)SpinBox/dsb_or_sb_up_button.png);
+	width: 12px;
+	height: 11px;
+}
+
+QSpinBox:down-button{
+	image: url(:/(double)SpinBox/icons/(Double)SpinBox/dsb_or_sb_down_button.png);
+	width: 12px;
+	height: 11px;
+}
+
+QSpinBox:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QSpinBox:disabled{
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="y_sb_day_number">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>90</y>
+         <width>51</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>ForbiddenCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSpinBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+
+QSpinBox:up-button{
+	image: url(:/(double)SpinBox/icons/(Double)SpinBox/dsb_or_sb_up_button.png);
+	width: 12px;
+	height: 11px;
+}
+
+QSpinBox:down-button{
+	image: url(:/(double)SpinBox/icons/(Double)SpinBox/dsb_or_sb_down_button.png);
+	width: 12px;
+	height: 11px;
+}
+
+QSpinBox:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QSpinBox:disabled{
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="y_pb_information_day_number">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>120</y>
+         <width>231</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>9</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:disabled{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	padding-left: 3px;
+	background-color: rgb(230, 230, 230);
+	color: rgb(0, 0, 0);
+}</string>
+       </property>
+       <property name="text">
+        <string>Номер дня автоматически формируется
+в зависимости от номера недели!</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icons/PushButton/pb_information.png</normaloff>icons/PushButton/pb_information.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>15</width>
+         <height>15</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="y_pb_information_first_yoga">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>40</y>
+         <width>201</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>9</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:disabled{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	padding-left: 3px;
+	background-color: rgb(230, 230, 230);
+	color: rgb(0, 0, 0);
+}</string>
+       </property>
+       <property name="text">
+        <string>Так как это первая йога, то номер 
+недели автоматически выставлен 
+первым и не может быть изменен!</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icons/PushButton/pb_information.png</normaloff>icons/PushButton/pb_information.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>15</width>
+         <height>15</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="y_pb_clear">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>440</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 15px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(55, 122, 255);
+	background-color: rgb(255, 255, 255);
+	color: rgb(55, 122, 255);
+}
+
+QPushButton:hover{
+	border-color: rgb(55, 122, 255);
+	background-color: rgb(225, 225, 225);
+	color: rgb(55, 122, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Очистить</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="y_gb_description">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>10</y>
+        <width>491</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 7px;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(200, 200, 200);
+background-color: rgb(245, 245, 245);</string>
+      </property>
+      <property name="title">
+       <string>Описание</string>
+      </property>
+      <widget class="QLabel" name="y_l_complex">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Комплекс</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="y_l_specialization">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>84</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Специализация</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="y_l_side">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>290</y>
+         <width>44</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Сторона</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="y_cb_complex">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>221</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>OpenHandCursor</cursorShape>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::WheelFocus</enum>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	padding-left: 6px;
+}
+
+QComboBox:drop-down{
+	border: 0px;
+}
+
+QComboBox::down-arrow{
+	image: url(:/comboBox/icons/ComboBox/cb_down_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox::down-arrow:on{
+	image: url(:/comboBox/icons/ComboBox/cb_up_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QComboBox:disabled{
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+       <property name="insertPolicy">
+        <enum>QComboBox::InsertAtBottom</enum>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="y_cb_specialization">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>90</y>
+         <width>121</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>OpenHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	padding-left: 6px;
+}
+
+QComboBox:drop-down{
+	border: 0px;
+}
+
+QComboBox::down-arrow{
+	image: url(:/comboBox/icons/ComboBox/cb_down_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox::down-arrow:on{
+	image: url(:/comboBox/icons/ComboBox/cb_up_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QComboBox:disabled{
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="y_sb_time_work">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>330</y>
+         <width>51</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSpinBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+
+QSpinBox:up-button{
+	image: url(:/(double)SpinBox/icons/(Double)SpinBox/dsb_or_sb_up_button.png);
+	width: 12px;
+	height: 11px;
+}
+
+QSpinBox:down-button{
+	image: url(:/(double)SpinBox/icons/(Double)SpinBox/dsb_or_sb_down_button.png);
+	width: 12px;
+	height: 11px;
+}
+
+QSpinBox:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QSpinBox:disabled{
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="y_sb_time_rest">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>400</y>
+         <width>51</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSpinBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+
+QSpinBox:up-button{
+	image: url(:/(double)SpinBox/icons/(Double)SpinBox/dsb_or_sb_up_button.png);
+	width: 12px;
+	height: 11px;
+}
+
+QSpinBox:down-button{
+	image: url(:/(double)SpinBox/icons/(Double)SpinBox/dsb_or_sb_down_button.png);
+	width: 12px;
+	height: 11px;
+}
+
+QSpinBox:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QSpinBox:disabled{
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="y_l_time_work">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>330</y>
+         <width>81</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Время работы (циклов вдох-выдох)</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="y_l_time_rest">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>400</y>
+         <width>91</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Время отдыха (циклов вдох-выдох)</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="y_l_asanas">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>140</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Асаны</string>
+       </property>
+      </widget>
+      <widget class="QListWidget" name="y_lw_asanas">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>140</y>
+         <width>361</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="cursor" stdset="0">
+        <cursorShape>ForbiddenCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QListWidget{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	padding: 5px;
+}
+
+QListWidget:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QListWidget::item:hover{
+	background-color: rgb(240, 240, 240);
+	padding: 3px;
+	margin: 2px;
+	color: rgb(0, 0, 0);
+}
+</string>
+       </property>
+       <property name="selectionMode">
+        <enum>QAbstractItemView::NoSelection</enum>
+       </property>
+      </widget>
+      <widget class="QFrame" name="y_f_side">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>280</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 7px;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(200, 200, 200);
+background-color: rgb(245, 245, 245);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QRadioButton" name="y_rb_left_side">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>31</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift Light SemiCondensed</family>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QRadioButton{
+	border-width: 0px;
+}
+
+QRadioButton:indicator:checked{
+	image: url(:/radioButton/icons/RadioButton/rb_indicator_checked.png);
+	width: 14px;
+	height: 14px;
+}
+
+QRadioButton:indicator:unchecked{
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+}
+
+QRadioButton:indicator:unchecked:hover{
+	border-color: rgb(55, 122, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>Л</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="y_rb_right_side">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>10</y>
+          <width>31</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift Light SemiCondensed</family>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QRadioButton{
+	border-width: 0px;
+}
+
+QRadioButton:indicator:checked{
+	image: url(:/radioButton/icons/RadioButton/rb_indicator_checked.png);
+	width: 14px;
+	height: 14px;
+}
+
+QRadioButton:indicator:unchecked{
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+}
+
+QRadioButton:indicator:unchecked:hover{
+	border-color: rgb(55, 122, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>П</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="y_l_error_choose_side">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>290</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(255, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Выберите сторону</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="y_page_viewing">
+     <widget class="QTableWidget" name="y_tbl_data_yoga">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>110</y>
+        <width>871</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 7px;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(200, 200, 200);
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="y_gb_stage_tab_viewing">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>381</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 7px;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(200, 200, 200);
+background-color: rgb(245, 245, 245);</string>
+      </property>
+      <property name="title">
+       <string>Этап</string>
+      </property>
+      <widget class="QLabel" name="y_l_day_number_page_viewing">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>40</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>День №</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="y_l_week_number_page_viewing">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Неделя №</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="y_cb_week_number">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>40</y>
+         <width>69</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>OpenHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	padding-left: 6px;
+}
+
+QComboBox:drop-down{
+	border: 0px;
+}
+
+QComboBox::down-arrow{
+	image: url(:/comboBox/icons/ComboBox/cb_down_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox::down-arrow:on{
+	image: url(:/comboBox/icons/ComboBox/cb_up_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QComboBox:disabled{
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="y_cb_day_number">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>40</y>
+         <width>71</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>OpenHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	padding-left: 6px;
+}
+
+QComboBox:drop-down{
+	border: 0px;
+}
+
+QComboBox::down-arrow{
+	image: url(:/comboBox/icons/ComboBox/cb_down_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox::down-arrow:on{
+	image: url(:/comboBox/icons/ComboBox/cb_up_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QComboBox:disabled{
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="y_pb_hint_changing_data_yoga">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>460</y>
+        <width>871</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>9</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:disabled{
+	text-align: left;
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	padding-left: 3px;
+	background-color: rgb(230, 230, 230);
+	color: rgb(0, 0, 0);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../Users/user_1/OneDrive/Спорт/Фото/Иконки/Черные/125768.png</normaloff>../../Users/user_1/OneDrive/Спорт/Фото/Иконки/Черные/125768.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>19</width>
+        <height>19</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="y_page_statistic">
+     <widget class="QGroupBox" name="y_gb_criteria">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>211</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 7px;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(200, 200, 200);
+background-color: rgb(245, 245, 245);</string>
+      </property>
+      <property name="title">
+       <string>Критерий</string>
+      </property>
+      <widget class="QRadioButton" name="y_rb_complexes">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>85</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{
+	border-width: 0px;
+}
+
+QRadioButton:indicator:checked{
+	image: url(:/radioButton/icons/RadioButton/rb_indicator_checked.png);
+	width: 14px;
+	height: 14px;
+}
+
+QRadioButton:indicator:unchecked{
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+}
+
+QRadioButton:indicator:unchecked:hover{
+	border-color: rgb(55, 122, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>комплексов</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="y_rb_specializations">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>106</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{
+	border-width: 0px;
+}
+
+QRadioButton:indicator:checked{
+	image: url(:/radioButton/icons/RadioButton/rb_indicator_checked.png);
+	width: 14px;
+	height: 14px;
+}
+
+QRadioButton:indicator:unchecked{
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+}
+
+QRadioButton:indicator:unchecked:hover{
+	border-color: rgb(55, 122, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>специализаций</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="y_rb_asanas_on_the_sides">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>120</y>
+         <width>116</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{
+	border-width: 0px;
+}
+
+QRadioButton:indicator:checked{
+	image: url(:/radioButton/icons/RadioButton/rb_indicator_checked.png);
+	width: 14px;
+	height: 14px;
+}
+
+QRadioButton:indicator:unchecked{
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+}
+
+QRadioButton:indicator:unchecked:hover{
+	border-color: rgb(55, 122, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>асан по сторонам</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="y_rb_week_number">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>200</y>
+         <width>81</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{
+	border-width: 0px;
+}
+
+QRadioButton:indicator:checked{
+	image: url(:/radioButton/icons/RadioButton/rb_indicator_checked.png);
+	width: 14px;
+	height: 14px;
+}
+
+QRadioButton:indicator:unchecked{
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+}
+
+QRadioButton:indicator:unchecked:hover{
+	border-color: rgb(55, 122, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>неделю №</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="y_rb_day_number">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>230</y>
+         <width>71</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{
+	border-width: 0px;
+}
+
+QRadioButton:indicator:checked{
+	image: url(:/radioButton/icons/RadioButton/rb_indicator_checked.png);
+	width: 14px;
+	height: 14px;
+}
+
+QRadioButton:indicator:unchecked{
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+}
+
+QRadioButton:indicator:unchecked:hover{
+	border-color: rgb(55, 122, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>день №</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="y_l_number_of_executions">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>135</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Количество выполнений:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="y_l_sum_of_cycles">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>170</y>
+         <width>159</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Сумма циклов вдох-выдох за:</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="y_l_last_day_training">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>280</y>
+         <width>138</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Последний день практики:</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="y_rb_last_training_complex">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>310</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{
+	border-width: 0px;
+}
+
+QRadioButton:indicator:checked{
+	image: url(:/radioButton/icons/RadioButton/rb_indicator_checked.png);
+	width: 14px;
+	height: 14px;
+}
+
+QRadioButton:indicator:unchecked{
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+}
+
+QRadioButton:indicator:unchecked:hover{
+	border-color: rgb(55, 122, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>комплекса</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="y_rb_last_training_specialization">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>340</y>
+         <width>99</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{
+	border-width: 0px;
+}
+
+QRadioButton:indicator:checked{
+	image: url(:/radioButton/icons/RadioButton/rb_indicator_checked.png);
+	width: 14px;
+	height: 14px;
+}
+
+QRadioButton:indicator:unchecked{
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+}
+
+QRadioButton:indicator:unchecked:hover{
+	border-color: rgb(55, 122, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>специализации</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTableWidget" name="y_tbl_statistics">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>10</y>
+        <width>641</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>ForbiddenCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 7px;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(200, 200, 200);
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="w_page_creature">
+     <widget class="QGroupBox" name="w_gb_stage">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>441</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 7px;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(200, 200, 200);
+background-color: rgb(245, 245, 245);</string>
+      </property>
+      <property name="title">
+       <string>Этап</string>
+      </property>
+      <widget class="QComboBox" name="w_cb_mesocycle">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>130</y>
+         <width>131</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>OpenHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	padding-left: 6px;
+}
+
+QComboBox:drop-down{
+	border: 0px;
+}
+
+QComboBox::down-arrow{
+	image: url(:/comboBox/icons/ComboBox/cb_down_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox::down-arrow:on{
+	image: url(:/comboBox/icons/ComboBox/cb_up_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QComboBox:disabled{
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="w_l_mesocycle">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>130</y>
+         <width>53</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Мезоцикл</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="w_l_microcycle">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>180</y>
+         <width>62</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Микроцикл</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="w_cb_microcycle">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>180</y>
+         <width>272</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>OpenHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	padding-left: 6px;
+}
+
+QComboBox:drop-down{
+	border: 0px;
+}
+
+QComboBox::down-arrow{
+	image: url(:/comboBox/icons/ComboBox/cb_down_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox::down-arrow:on{
+	image: url(:/comboBox/icons/ComboBox/cb_up_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QComboBox:disabled{
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+      </widget>
+      <widget class="QCalendarWidget" name="w_cw_workout">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>230</y>
+         <width>321</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="w_l_date">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>230</y>
+         <width>26</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Дата</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="w_l_week_number">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Неделя №</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="w_l_day_number">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>42</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>День №</string>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="w_sb_week_number">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>30</y>
+         <width>42</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSpinBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+
+QSpinBox:up-button{
+	image: url(:/(double)SpinBox/icons/(Double)SpinBox/dsb_or_sb_up_button.png);
+	width: 12px;
+	height: 11px;
+}
+
+QSpinBox:down-button{
+	image: url(:/(double)SpinBox/icons/(Double)SpinBox/dsb_or_sb_down_button.png);
+	width: 12px;
+	height: 11px;
+}
+
+QSpinBox:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QSpinBox:disabled{
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="w_sb_day_number">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>80</y>
+         <width>42</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSpinBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+
+QSpinBox:up-button{
+	image: url(:/(double)SpinBox/icons/(Double)SpinBox/dsb_or_sb_up_button.png);
+	width: 12px;
+	height: 11px;
+}
+
+QSpinBox:down-button{
+	image: url(:/(double)SpinBox/icons/(Double)SpinBox/dsb_or_sb_down_button.png);
+	width: 12px;
+	height: 11px;
+}
+
+QSpinBox:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QSpinBox:disabled{
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="w_pb_information_like_last_workout">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>420</y>
+         <width>411</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>9</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:disabled{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	padding-left: 3px;
+	background-color: rgb(230, 230, 230);
+	color: rgb(0, 0, 0);
+}</string>
+       </property>
+       <property name="text">
+        <string>Так как номер недели и номер дня соответствуют крайней тренировке, то 
+мезоцикл, микроцикл и дата автоматически установлены в соответствии 
+с крайней тренировкой!</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icons/PushButton/pb_information.png</normaloff>icons/PushButton/pb_information.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>15</width>
+         <height>15</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="w_pb_information_first_workout">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>30</y>
+         <width>211</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>9</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:disabled{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	padding-left: 3px;
+	background-color: rgb(230, 230, 230);
+	color: rgb(0, 0, 0);
+}</string>
+       </property>
+       <property name="text">
+        <string>Так как это первая тренировка,
+то номер недели и номер дня
+автоматически выставлены
+значением &quot;1&quot; и не могут 
+быть изменены!</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icons/PushButton/pb_information.png</normaloff>icons/PushButton/pb_information.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>15</width>
+         <height>15</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="w_pb_save">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>310</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: rgb(55, 122, 255);
+	border-radius: 15px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(55, 122, 255);
+	color: rgb(255, 255, 255);
+}
+
+QPushButton:hover{
+	background-color: rgb(0, 85, 255);
+	border-color: rgb(0, 85, 255);
+	color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Сохранить</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="w_pb_clear">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>310</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 15px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(55, 122, 255);
+	background-color: rgb(255, 255, 255);
+	color: rgb(55, 122, 255);
+}
+
+QPushButton:hover{
+	border-color: rgb(55, 122, 255);
+	background-color: rgb(225, 225, 225);
+	color: rgb(55, 122, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Очистить</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="w_gb_description">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>10</y>
+        <width>421</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 7px;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(200, 200, 200);
+background-color: rgb(245, 245, 245);</string>
+      </property>
+      <property name="title">
+       <string>Описание</string>
+      </property>
+      <widget class="QLabel" name="w_l_muscle_group">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>99</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Мышечная группа</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="w_cb_muscle_group">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>40</y>
+         <width>88</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>OpenHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	padding-left: 6px;
+}
+
+QComboBox:drop-down{
+	border: 0px;
+}
+
+QComboBox::down-arrow{
+	image: url(:/comboBox/icons/ComboBox/cb_down_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox::down-arrow:on{
+	image: url(:/comboBox/icons/ComboBox/cb_up_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QComboBox:disabled{
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="w_l_muscle">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Мышца</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="w_cb_muscle">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>90</y>
+         <width>229</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>OpenHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	padding-left: 6px;
+}
+
+QComboBox:drop-down{
+	border: 0px;
+}
+
+QComboBox::down-arrow{
+	image: url(:/comboBox/icons/ComboBox/cb_down_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox::down-arrow:on{
+	image: url(:/comboBox/icons/ComboBox/cb_up_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QComboBox:disabled{
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="w_l_exercise">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>140</y>
+         <width>66</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Упражнение</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="w_l_side">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>190</y>
+         <width>44</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Сторона</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="w_l_base_weight">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>240</y>
+         <width>64</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Рабочий вес</string>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="w_dsb_base_weight">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>240</y>
+         <width>62</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QDoubleSpinBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+
+QDoubleSpinBox:up-button{
+	image: url(:/(double)SpinBox/icons/(Double)SpinBox/dsb_or_sb_up_button.png);
+	width: 12px;
+	height: 11px;
+}
+
+QDoubleSpinBox:down-button{
+	image: url(:/(double)SpinBox/icons/(Double)SpinBox/dsb_or_sb_down_button.png);
+	width: 12px;
+	height: 11px;
+}
+
+QDoubleSpinBox:hover{
+	border-color: rgb(55, 122, 255);
+}</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="w_cb_side">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>190</y>
+         <width>41</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>OpenHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	padding-left: 6px;
+}
+
+QComboBox:drop-down{
+	border: 0px;
+}
+
+QComboBox::down-arrow{
+	image: url(:/comboBox/icons/ComboBox/cb_down_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox::down-arrow:on{
+	image: url(:/comboBox/icons/ComboBox/cb_up_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QComboBox:disabled{
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="w_cb_exercise">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>140</y>
+         <width>266</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>OpenHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	padding-left: 6px;
+}
+
+QComboBox:drop-down{
+	border: 0px;
+}
+
+QComboBox::down-arrow{
+	image: url(:/comboBox/icons/ComboBox/cb_down_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox::down-arrow:on{
+	image: url(:/comboBox/icons/ComboBox/cb_up_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QComboBox:disabled{
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="w_l_error_choose_base_weight">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>240</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(255, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Выставите рабочий вес</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="w_page_viewing">
+     <widget class="QTableWidget" name="w_tbl_data_workout">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>871</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 7px;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(200, 200, 200);
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="w_gb_stage_tab_viewing">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>361</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 7px;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(200, 200, 200);
+background-color: rgb(245, 245, 245);</string>
+      </property>
+      <property name="title">
+       <string>Этап</string>
+      </property>
+      <widget class="QComboBox" name="w_cb_week_number">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>30</y>
+         <width>61</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>OpenHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	padding-left: 6px;
+}
+
+QComboBox:drop-down{
+	border: 0px;
+}
+
+QComboBox::down-arrow{
+	image: url(:/comboBox/icons/ComboBox/cb_down_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox::down-arrow:on{
+	image: url(:/comboBox/icons/ComboBox/cb_up_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QComboBox:disabled{
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="w_l_week_number_page_viewing">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Неделя №</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="w_l_day_number_page_viewing">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>30</y>
+         <width>42</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>День №</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="w_cb_day_number">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>30</y>
+         <width>61</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>OpenHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	padding-left: 6px;
+}
+
+QComboBox:drop-down{
+	border: 0px;
+}
+
+QComboBox::down-arrow{
+	image: url(:/comboBox/icons/ComboBox/cb_down_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox::down-arrow:on{
+	image: url(:/comboBox/icons/ComboBox/cb_up_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QComboBox:disabled{
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="w_pb_hint_changing_data_workout">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>460</y>
+        <width>871</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>9</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:disabled{
+	text-align: left;
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	padding-left: 3px;
+	background-color: rgb(230, 230, 230);
+	color: rgb(0, 0, 0);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../Users/user_1/OneDrive/Спорт/Фото/Иконки/Черные/125768.png</normaloff>../../Users/user_1/OneDrive/Спорт/Фото/Иконки/Черные/125768.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>19</width>
+        <height>19</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="w_page_statistic">
+     <widget class="QGroupBox" name="w_gb_criteria">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>221</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 7px;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(200, 200, 200);
+background-color: rgb(245, 245, 245);</string>
+      </property>
+      <property name="title">
+       <string>Критерий</string>
+      </property>
+      <widget class="QRadioButton" name="w_rb_muscle_groups">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>116</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{
+	border-width: 0px;
+}
+
+QRadioButton:indicator:checked{
+	image: url(:/radioButton/icons/RadioButton/rb_indicator_checked.png);
+	width: 14px;
+	height: 14px;
+}
+
+QRadioButton:indicator:unchecked{
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+}
+
+QRadioButton:indicator:unchecked:hover{
+	border-color: rgb(55, 122, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>мышечных групп</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="w_rb_muscles">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>106</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{
+	border-width: 0px;
+}
+
+QRadioButton:indicator:checked{
+	image: url(:/radioButton/icons/RadioButton/rb_indicator_checked.png);
+	width: 14px;
+	height: 14px;
+}
+
+QRadioButton:indicator:unchecked{
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+}
+
+QRadioButton:indicator:unchecked:hover{
+	border-color: rgb(55, 122, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>мышц</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="w_rb_exercises_on_the_sides">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>120</y>
+         <width>151</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{
+	border-width: 0px;
+}
+
+QRadioButton:indicator:checked{
+	image: url(:/radioButton/icons/RadioButton/rb_indicator_checked.png);
+	width: 14px;
+	height: 14px;
+}
+
+QRadioButton:indicator:unchecked{
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+}
+
+QRadioButton:indicator:unchecked:hover{
+	border-color: rgb(55, 122, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>упражнений по сторонам</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="w_rb_week_number">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>200</y>
+         <width>81</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{
+	border-width: 0px;
+}
+
+QRadioButton:indicator:checked{
+	image: url(:/radioButton/icons/RadioButton/rb_indicator_checked.png);
+	width: 14px;
+	height: 14px;
+}
+
+QRadioButton:indicator:unchecked{
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+}
+
+QRadioButton:indicator:unchecked:hover{
+	border-color: rgb(55, 122, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>неделю №</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="w_rb_day_number">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>230</y>
+         <width>89</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{
+	border-width: 0px;
+}
+
+QRadioButton:indicator:checked{
+	image: url(:/radioButton/icons/RadioButton/rb_indicator_checked.png);
+	width: 14px;
+	height: 14px;
+}
+
+QRadioButton:indicator:unchecked{
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+}
+
+QRadioButton:indicator:unchecked:hover{
+	border-color: rgb(55, 122, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>день №</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="w_l_number_of_executions">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>135</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Количество выполнений:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="w_l_qrl_and_training_volume">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>170</y>
+         <width>169</width>
+         <height>14</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>КПШ и тренировочный объем за:</string>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="w_l_last_day_training">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>280</y>
+         <width>150</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Последний день тренировки:</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="w_rb_last_training_muscle_group">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>310</y>
+         <width>115</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{
+	border-width: 0px;
+}
+
+QRadioButton:indicator:checked{
+	image: url(:/radioButton/icons/RadioButton/rb_indicator_checked.png);
+	width: 14px;
+	height: 14px;
+}
+
+QRadioButton:indicator:unchecked{
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+}
+
+QRadioButton:indicator:unchecked:hover{
+	border-color: rgb(55, 122, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>мышечной группы</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="w_rb_last_training_muscle">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>340</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{
+	border-width: 0px;
+}
+
+QRadioButton:indicator:checked{
+	image: url(:/radioButton/icons/RadioButton/rb_indicator_checked.png);
+	width: 14px;
+	height: 14px;
+}
+
+QRadioButton:indicator:unchecked{
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+}
+
+QRadioButton:indicator:unchecked:hover{
+	border-color: rgb(55, 122, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>мышцы</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="w_rb_last_training_exercise">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>370</y>
+         <width>85</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{
+	border-width: 0px;
+}
+
+QRadioButton:indicator:checked{
+	image: url(:/radioButton/icons/RadioButton/rb_indicator_checked.png);
+	width: 14px;
+	height: 14px;
+}
+
+QRadioButton:indicator:unchecked{
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+}
+
+QRadioButton:indicator:unchecked:hover{
+	border-color: rgb(55, 122, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>упражнения</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTableWidget" name="w_tbl_statistics">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>10</y>
+        <width>621</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>ForbiddenCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 7px;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(200, 200, 200);
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="s_page_creature">
+     <widget class="QGroupBox" name="s_gb_stage">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>291</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 7px;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(200, 200, 200);
+background-color: rgb(245, 245, 245);</string>
+      </property>
+      <property name="title">
+       <string>Этап</string>
+      </property>
+      <widget class="QLabel" name="s_l_week_number">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Неделя №</string>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="s_sb_week_number">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>40</y>
+         <width>42</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>ForbiddenCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSpinBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+
+QSpinBox:up-button{
+	image: url(:/(double)SpinBox/icons/(Double)SpinBox/dsb_or_sb_up_button.png);
+	width: 12px;
+	height: 11px;
+}
+
+QSpinBox:down-button{
+	image: url(:/(double)SpinBox/icons/(Double)SpinBox/dsb_or_sb_down_button.png);
+	width: 12px;
+	height: 11px;
+}
+
+QSpinBox:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QSpinBox:disabled{
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="s_sb_day_number">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>40</y>
+         <width>42</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>ForbiddenCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSpinBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+
+QSpinBox:up-button{
+	image: url(:/(double)SpinBox/icons/(Double)SpinBox/dsb_or_sb_up_button.png);
+	width: 12px;
+	height: 11px;
+}
+
+QSpinBox:down-button{
+	image: url(:/(double)SpinBox/icons/(Double)SpinBox/dsb_or_sb_down_button.png);
+	width: 12px;
+	height: 11px;
+}
+
+QSpinBox:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QSpinBox:disabled{
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="s_l_day_number">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>40</y>
+         <width>47</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>День №</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="s_pb_information_week_and_day_number">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>9</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:disabled{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	padding-left: 3px;
+	background-color: rgb(230, 230, 230);
+	color: rgb(0, 0, 0);
+}</string>
+       </property>
+       <property name="text">
+        <string>Номер недели и номер дня автоматически
+формируются согласно крайней тренировке!</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icons/PushButton/pb_information.png</normaloff>icons/PushButton/pb_information.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>15</width>
+         <height>15</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="s_gb_description">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>10</y>
+        <width>561</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 7px;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(200, 200, 200);
+background-color: rgb(245, 245, 245);</string>
+      </property>
+      <property name="title">
+       <string>Описание</string>
+      </property>
+      <widget class="QLabel" name="s_l_involved_muscle">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>90</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Задействованная мышца</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="s_l_asana">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>170</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Асана</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="s_l_side">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>350</y>
+         <width>43</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Сторона</string>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="s_sb_time_work">
+       <property name="geometry">
+        <rect>
+         <x>158</x>
+         <y>390</y>
+         <width>42</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSpinBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+
+QSpinBox:up-button{
+	image: url(:/(double)SpinBox/icons/(Double)SpinBox/dsb_or_sb_up_button.png);
+	width: 12px;
+	height: 11px;
+}
+
+QSpinBox:down-button{
+	image: url(:/(double)SpinBox/icons/(Double)SpinBox/dsb_or_sb_down_button.png);
+	width: 12px;
+	height: 11px;
+}
+
+QSpinBox:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QSpinBox:disabled{
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="s_l_time_work">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>390</y>
+         <width>111</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Время работы (циклов вдох-выдох)</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="s_sb_time_rest">
+       <property name="geometry">
+        <rect>
+         <x>158</x>
+         <y>440</y>
+         <width>42</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSpinBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+
+QSpinBox:up-button{
+	image: url(:/(double)SpinBox/icons/(Double)SpinBox/dsb_or_sb_up_button.png);
+	width: 12px;
+	height: 11px;
+}
+
+QSpinBox:down-button{
+	image: url(:/(double)SpinBox/icons/(Double)SpinBox/dsb_or_sb_down_button.png);
+	width: 12px;
+	height: 11px;
+}
+
+QSpinBox:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QSpinBox:disabled{
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="s_l_time_rest">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>440</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Время отдыха (циклов вдох-выдох)</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QListWidget" name="s_lstw_involved_muscle">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>40</y>
+         <width>311</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="cursor" stdset="0">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QListWidget{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	padding: 5px;
+}
+
+QListWidget:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QListWidget::item:hover{
+	background-color: rgb(240, 240, 240);
+	padding: 3px;
+	margin: 2px;
+	color: rgb(0, 0, 0);
+}
+</string>
+       </property>
+      </widget>
+      <widget class="QListWidget" name="s_lstw_asana">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>170</y>
+         <width>381</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="cursor" stdset="0">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QListWidget{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	padding: 5px;
+}
+
+QListWidget:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QListWidget::item:hover{
+	background-color: rgb(240, 240, 240);
+	padding: 3px;
+	margin: 2px;
+	color: rgb(0, 0, 0);
+}
+</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="s_pb_clear_selection">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>40</y>
+         <width>61</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(55, 122, 255);
+	background-color: rgb(255, 255, 255);
+	color: rgb(55, 122, 255);
+}
+
+QPushButton:hover{
+	border-color: rgb(55, 122, 255);
+	background-color: rgb(225, 225, 225);
+	color: rgb(55, 122, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>Очистить
+выбор</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="s_pb_hint_add_selected_asanas">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>290</y>
+         <width>381</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>9</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:disabled{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	padding-left: 3px;
+	background-color: rgb(230, 230, 230);
+	color: rgb(0, 0, 0);
+}</string>
+       </property>
+       <property name="text">
+        <string>Чтобы добавить асану в список &quot;Выбранные асаны&quot; кликните по ней 
+дважды!</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>icons/PushButton/pb_hint.png</normaloff>icons/PushButton/pb_hint.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>19</width>
+         <height>19</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QFrame" name="s_f_side">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>340</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QRadioButton" name="s_rb_left_side">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>31</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift Light SemiCondensed</family>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QRadioButton{
+	border-width: 0px;
+}
+
+QRadioButton:indicator:checked{
+	image: url(:/radioButton/icons/RadioButton/rb_indicator_checked.png);
+	width: 14px;
+	height: 14px;
+}
+
+QRadioButton:indicator:unchecked{
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+}
+
+QRadioButton:indicator:unchecked:hover{
+	border-color: rgb(55, 122, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>Л</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="s_rb_right_side">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>10</y>
+          <width>31</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift Light SemiCondensed</family>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QRadioButton{
+	border-width: 0px;
+}
+
+QRadioButton:indicator:checked{
+	image: url(:/radioButton/icons/RadioButton/rb_indicator_checked.png);
+	width: 14px;
+	height: 14px;
+}
+
+QRadioButton:indicator:unchecked{
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+}
+
+QRadioButton:indicator:unchecked:hover{
+	border-color: rgb(55, 122, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>П</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="s_l_error_choose_side">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>350</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>true</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(255, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Выберите сторону</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="s_l_error_choose_asana">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>260</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(255, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Выберите асану</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QListWidget" name="s_lstw_selected_asanas">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>291</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QListWidget{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	padding: 5px;
+}
+
+QListWidget:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QListWidget::item:hover{
+	background-color: rgb(240, 240, 240);
+	padding: 3px;
+	margin: 2px;
+	color: rgb(0, 0, 0);
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="s_l_selected_asanas">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>150</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+        <underline>false</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+      </property>
+      <property name="text">
+       <string>Выбранные асаны</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="s_pb_clear">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>452</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 15px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(55, 122, 255);
+	background-color: rgb(255, 255, 255);
+	color: rgb(55, 122, 255);
+}
+
+QPushButton:hover{
+	border-color: rgb(55, 122, 255);
+	background-color: rgb(225, 225, 225);
+	color: rgb(55, 122, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Очистить</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="s_pb_save">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>450</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: rgb(55, 122, 255);
+	border-radius: 15px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(55, 122, 255);
+	color: rgb(255, 255, 255);
+}
+
+QPushButton:hover{
+	background-color: rgb(0, 85, 255);
+	border-color: rgb(0, 85, 255);
+	color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Сохранить</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="s_pb_hint_remove_selected_asanas">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>380</y>
+        <width>291</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>9</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:disabled{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	padding-left: 3px;
+	background-color: rgb(230, 230, 230);
+	color: rgb(0, 0, 0);
+}</string>
+      </property>
+      <property name="text">
+       <string>Чтобы удалить асану из списка &quot;Выбранные асаны&quot; 
+кликните по ней дважды!</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons/PushButton/pb_hint.png</normaloff>icons/PushButton/pb_hint.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>19</width>
+        <height>19</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="s_page_viewing">
+     <widget class="QGroupBox" name="s_gb_stage_tab_viewing">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>361</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 7px;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(200, 200, 200);
+background-color: rgb(245, 245, 245);</string>
+      </property>
+      <property name="title">
+       <string>Этап</string>
+      </property>
+      <widget class="QComboBox" name="s_cb_week_number">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>30</y>
+         <width>61</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>OpenHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	padding-left: 6px;
+}
+
+QComboBox:drop-down{
+	border: 0px;
+}
+
+QComboBox::down-arrow{
+	image: url(:/comboBox/icons/ComboBox/cb_down_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox::down-arrow:on{
+	image: url(:/comboBox/icons/ComboBox/cb_up_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QComboBox:disabled{
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="s_l_week_number_page_viewing">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Неделя №</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="s_l_day_number_page_viewing">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>30</y>
+         <width>42</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>День №</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="s_cb_day_number">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>30</y>
+         <width>61</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>OpenHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	padding-left: 6px;
+}
+
+QComboBox:drop-down{
+	border: 0px;
+}
+
+QComboBox::down-arrow{
+	image: url(:/comboBox/icons/ComboBox/cb_down_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox::down-arrow:on{
+	image: url(:/comboBox/icons/ComboBox/cb_up_arrow.png);
+	wight: 12px;
+	height: 12px;
+	margin-right: 3px;
+}
+
+QComboBox:hover{
+	border-color: rgb(55, 122, 255);
+}
+
+QComboBox:disabled{
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTableWidget" name="s_tbl_data_stretching">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>871</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 7px;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(200, 200, 200);
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="s_pb_hint_changing_data_stretching">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>460</y>
+        <width>871</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>9</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:disabled{
+	text-align: left;
+	border-radius: 7px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	padding-left: 3px;
+	background-color: rgb(230, 230, 230);
+	color: rgb(0, 0, 0);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../Users/user_1/OneDrive/Спорт/Фото/Иконки/Черные/125768.png</normaloff>../../Users/user_1/OneDrive/Спорт/Фото/Иконки/Черные/125768.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>19</width>
+        <height>19</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="s_page_statistic">
+     <widget class="QGroupBox" name="s_gb_criteria">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>211</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 7px;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(200, 200, 200);
+background-color: rgb(245, 245, 245);</string>
+      </property>
+      <property name="title">
+       <string>Критерий</string>
+      </property>
+      <widget class="QRadioButton" name="s_rb_asanas_on_the_sides">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>116</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{
+	border-width: 0px;
+}
+
+QRadioButton:indicator:checked{
+	image: url(:/radioButton/icons/RadioButton/rb_indicator_checked.png);
+	width: 14px;
+	height: 14px;
+}
+
+QRadioButton:indicator:unchecked{
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+}
+
+QRadioButton:indicator:unchecked:hover{
+	border-color: rgb(55, 122, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>асан по сторонам</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="s_l_number_of_executions">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>135</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Количество выполнений:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="s_l_last_day_training">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>100</y>
+         <width>138</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 0px;
+color: rgb(100, 100, 100);</string>
+       </property>
+       <property name="text">
+        <string>Последний день практики:</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="s_rb_last_training_asana">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>130</y>
+         <width>61</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Light SemiCondensed</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QRadioButton{
+	border-width: 0px;
+}
+
+QRadioButton:indicator:checked{
+	image: url(:/radioButton/icons/RadioButton/rb_indicator_checked.png);
+	width: 14px;
+	height: 14px;
+}
+
+QRadioButton:indicator:unchecked{
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(200, 200, 200);
+	background-color: rgb(255, 255, 255);
+}
+
+QRadioButton:indicator:unchecked:hover{
+	border-color: rgb(55, 122, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>асаны</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTableWidget" name="s_tbl_statistics">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>10</y>
+        <width>641</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light SemiCondensed</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>ForbiddenCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 7px;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(200, 200, 200);
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
