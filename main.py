@@ -8,7 +8,7 @@ from workout import Workout
 
 
 # ОБЩЕЕ
-def pb_open_close_main_menu_clicked():
+def open_or_close_main_menu():
     # Определение того, раскрыто или закрыто меню на момент вызова,
     # чтобы настроить размеры окна меню, его элементов и stackedWidget
     if ui.f_menu.width() == 151:
@@ -63,7 +63,7 @@ def pb_open_close_main_menu_clicked():
         ui.pb_stretching.setText('  Растяжка')
 
 
-def pb_home_clicked():
+def page_home_activate():
     ui.pb_home.setChecked(True)
     ui.pb_yoga.setChecked(False)
     ui.pb_workout.setChecked(False)
@@ -83,7 +83,7 @@ def pb_home_clicked():
     ui.f_auxiliary_menu.setVisible(False)
 
 
-def pb_yoga_clicked():
+def page_yoga_activate():
     global last_page_yoga
 
     ui.pb_home.setChecked(False)
@@ -117,7 +117,7 @@ def pb_yoga_clicked():
             last_page_yoga = 'statistic'
 
 
-def pb_workout_clicked():
+def page_workout_activate():
     global last_page_workout
 
     ui.pb_home.setChecked(False)
@@ -151,7 +151,7 @@ def pb_workout_clicked():
             last_page_workout = 'statistic'
 
 
-def pb_stretching_clicked():
+def page_stretching_activate():
     global last_page_stretching
 
     ui.pb_home.setChecked(False)
@@ -236,7 +236,7 @@ def pb_statistic_clicked():
         last_page_stretching = 'statistic'
 
 
-def pb_auxiliary_menu_clicked():
+def page_from_auxiliary_menu_activate():
     global last_page_yoga
     global last_page_workout
     global last_page_stretching
@@ -323,7 +323,7 @@ def set_value_sb_week_number(week_numbers: list, sb_week_number: QtWidgets.QSpin
                 ui.w_sb_week_number.setEnabled(True)
 
 
-def week_number_textChanged():
+def week_number_value_changed():
     # Определение текущей страницы
     match ui.stackedWidget.currentWidget().objectName():
         case 'y_page_creature':
@@ -391,7 +391,7 @@ def week_number_textChanged():
                 ui.s_sb_day_number.setValue(1)
 
 
-def day_number_textChanged():
+def day_number_value_changed():
     # Определение текущей страницы
     match ui.stackedWidget.currentWidget().objectName():
         case 'y_page_creature':
@@ -443,7 +443,7 @@ def day_number_textChanged():
                 pass
 
 
-def cw_clicked():
+def date_changed():
     # Определение текущей страницы
     match ui.stackedWidget.currentWidget().objectName():
         case 'y_page_creature':
@@ -596,7 +596,7 @@ def fill_table(result, table_name: QtWidgets.QTableWidget):
 
 
 # Страница "Просмотр". GroupBox "Этап"
-def cb_week_number_currentTextChanged():
+def cb_week_number_text_changed():
     # Определение текущей страницы
     match ui.stackedWidget.currentWidget().objectName():
         case 'y_page_creature' | 'y_page_viewing':
@@ -646,7 +646,7 @@ def cb_week_number_currentTextChanged():
                     ui.s_cb_day_number.addItems(stretching.day_numbers)
 
 
-def cb_day_number_currentTextChanged():
+def cb_day_number_text_changed():
     # Определение текущей страницы
     match ui.stackedWidget.currentWidget().objectName():
         case 'y_page_creature' | 'y_page_viewing':
@@ -666,7 +666,7 @@ def cb_day_number_currentTextChanged():
 
 # ЙОГА
 # Страница "Создание". Кнопки
-def y_pb_save_clicked():
+def y_insert_data_yoga():
     # Проверка заполненности полей перед сохранением данных
     if is_all_field_filled():
         # Определение выбранной стороны
@@ -710,7 +710,7 @@ def y_pb_save_clicked():
         ui.y_tbl_data_yoga.setGeometry(20, 110, 871, 381)
 
         # Сброс всех виджетов на странице "Создание" до изначальных настроек
-        y_pb_clear_clicked()
+        y_clear_data_on_page_creature()
 
         # Обновление номера дня, так его не происходит в момент сброса всех виджетов до изначальных настроек
         ui.y_sb_day_number.setValue(ui.y_sb_day_number.value() + 1)
@@ -739,7 +739,7 @@ def y_pb_save_clicked():
         form_training_schedule()
 
 
-def y_pb_clear_clicked():
+def y_clear_data_on_page_creature():
     # Сброс всех виджетов на странице "Создание" до изначальных настроек
     # GroupBox "Этап"
     # Номер недели и номер дня
@@ -771,7 +771,7 @@ def y_pb_clear_clicked():
 
 
 # Страница "Создание". GroupBox "Описание"
-def y_cb_complex_currentTextChanged():
+def y_complex_name_changed():
     yoga.complex.name = ui.y_cb_complex.currentText()
 
     # Специализация
@@ -783,7 +783,7 @@ def y_cb_complex_currentTextChanged():
         ui.y_cb_specialization.addItem(element.name)
 
 
-def y_cb_specialization_currentTextChanged():
+def y_specialization_name_changed():
     yoga.specialization.name = ui.y_cb_specialization.currentText()
 
     # Асаны
@@ -795,11 +795,7 @@ def y_cb_specialization_currentTextChanged():
         ui.y_lw_asanas.addItem(element.name)
 
 
-def y_rb_left_side_clicked():
-    ui.y_l_error_choose_side.setVisible(False)
-
-
-def y_rb_right_side_clicked():
+def y_side_changed():
     ui.y_l_error_choose_side.setVisible(False)
 
 
@@ -937,12 +933,12 @@ def form_data_yoga(week_number, day_number):
 
 
 def y_tbl_data_yoga_cellPressed():
-    global connect_y_tbl_data_yoga_cellChanged
+    global connect_y_update_data_yoga
 
     # Проверка того, был ли установлен connect с функцией изменения значения в ячейке до этого
-    if not connect_y_tbl_data_yoga_cellChanged:
-        ui.y_tbl_data_yoga.cellChanged.connect(y_tbl_data_yoga_cellChanged)
-        connect_y_tbl_data_yoga_cellChanged = True
+    if not connect_y_update_data_yoga:
+        ui.y_tbl_data_yoga.cellChanged.connect(y_update_data_yoga)
+        connect_y_update_data_yoga = True
 
     # Проверка доступности изменения значения выбранной ячейки
     if ui.y_tbl_data_yoga.currentColumn() in range(0, 6) or ui.y_tbl_data_yoga.currentColumn() == 10:
@@ -995,7 +991,7 @@ def y_tbl_data_yoga_cellPressed():
                 ui.y_tbl_data_yoga.setGeometry(20, 110, 871, 381)
 
 
-def y_tbl_data_yoga_cellChanged():
+def y_update_data_yoga():
     current_row = ui.y_tbl_data_yoga.currentRow()
     current_column = ui.y_tbl_data_yoga.currentColumn()
 
@@ -1067,7 +1063,7 @@ def y_tbl_data_yoga_cellChanged():
 
 # ТРЕНИРОВКА
 # Страница "Создание". GroupBox "Этап"
-def w_cb_mesocycle_currentTextChanged():
+def w_mesocycle_name_changed():
     workout.mesocycle.name = ui.w_cb_mesocycle.currentText()
 
     # Микроцикл
@@ -1079,12 +1075,12 @@ def w_cb_mesocycle_currentTextChanged():
         ui.w_cb_microcycle.addItem(element.name)
 
 
-def w_cb_microcycle_currentTextChanged():
+def w_microcycle_name_changed():
     workout.microcycle.name = ui.w_cb_microcycle.currentText()
 
 
 # Страница "Создание". Общее
-def w_pb_save_clicked():
+def w_insert_data_workout():
     # Проверка заполненности полей перед сохранением данных
     if is_all_field_filled():
         # Определение необходимости дублирования введенных данных с изменением стороны
@@ -1169,7 +1165,7 @@ def w_pb_save_clicked():
         ui.w_tbl_data_workout.setGeometry(20, 100, 871, 391)
 
         # Сброс всех виджетов на странице "Создание" до изначальных настроек
-        w_pb_clear_clicked()
+        w_clear_data_on_page_creature()
 
         # День номер (необходимо его отдельно проработать после добавления самой первой тренировки)
         form_day_numbers(ui.w_sb_week_number.text())
@@ -1210,14 +1206,14 @@ def w_pb_save_clicked():
         stretching.day_number = ui.s_sb_day_number.value()
 
 
-def w_pb_clear_clicked():
+def w_clear_data_on_page_creature():
     # Сброс всех виджетов на странице "Создание" до изначальных настроек
     # GroupBox "Этап"
     # Номер недели и номер дня
     form_week_numbers()
     set_value_sb_week_number(workout.week_numbers, ui.w_sb_week_number)
     # Специально самостоятельно вызываю метод, чтобы в дальнейшем правильно сформировалась дата
-    week_number_textChanged()
+    week_number_value_changed()
 
     # Мезоцикл и микроцикл
     for element in workout.mesocycles:
@@ -1239,7 +1235,7 @@ def w_pb_clear_clicked():
 
 
 # Страница "Создание". GroupBox "Описание"
-def w_cb_muscle_group_currentTextChanged():
+def w_muscle_group_name_changed():
     workout.muscle_group.name = ui.w_cb_muscle_group.currentText()
 
     # Мышца
@@ -1251,7 +1247,7 @@ def w_cb_muscle_group_currentTextChanged():
         ui.w_cb_muscle.addItem(element.name)
 
 
-def w_cb_muscle_currentTextChanged():
+def w_muscle_name_changed():
     workout.muscle.name = ui.w_cb_muscle.currentText()
 
     # Упражнение
@@ -1263,7 +1259,7 @@ def w_cb_muscle_currentTextChanged():
         ui.w_cb_exercise.addItem(element.name)
 
 
-def w_cb_exercise_currentTextChanged():
+def w_exercise_name_changed():
     workout.exercise.name = ui.w_cb_exercise.currentText()
 
     ui.w_cb_side.clear()
@@ -1280,11 +1276,11 @@ def w_cb_exercise_currentTextChanged():
             ui.w_cb_side.addItem('П')
 
 
-def w_cb_side_currentTextChanged():
+def w_side_changed():
     workout.exercise.side = ui.w_cb_side.currentText()
 
 
-def w_dsb_base_weight_textChanged():
+def w_base_weight_value_changed():
     if ui.w_dsb_base_weight.value() > 0.00:
         ui.w_l_error_choose_base_weight.setVisible(False)
         workout.exercise.base_weight = ui.w_dsb_base_weight.value()
@@ -1458,12 +1454,12 @@ def form_data_workout(week_number, day_number):
 
 # Страница "Просмотр"
 def w_tbl_data_workout_cellPressed():
-    global connect_w_tbl_data_workout_cellChanged
+    global connect_w_update_data_workout
 
     # Проверка того, был ли установлен connect с функцией изменения значения в ячейке до этого
-    if not connect_w_tbl_data_workout_cellChanged:
-        ui.w_tbl_data_workout.cellChanged.connect(w_tbl_data_workout_cellChanged)
-        connect_w_tbl_data_workout_cellChanged = True
+    if not connect_w_update_data_workout:
+        ui.w_tbl_data_workout.cellChanged.connect(w_update_data_workout)
+        connect_w_update_data_workout = True
 
     # Проверка доступности изменения значения выбранной ячейки
     if ui.w_tbl_data_workout.currentColumn() in range(0, 7) or \
@@ -1530,7 +1526,7 @@ def w_tbl_data_workout_cellPressed():
                 ui.w_tbl_data_workout.setGeometry(20, 100, 871, 391)
 
 
-def w_tbl_data_workout_cellChanged():
+def w_update_data_workout():
     current_row = ui.w_tbl_data_workout.currentRow()
     current_column = ui.w_tbl_data_workout.currentColumn()
 
@@ -1712,7 +1708,7 @@ def w_tbl_data_workout_cellChanged():
 
 # РАСТЯЖКА
 # Страница "Создание". GroupBox "Описание"
-def s_lstw_involved_muscle_currentTextChanged():
+def s_involved_muscle_name_changed():
     stretching.involved_muscle.name = ui.s_lstw_involved_muscle.currentItem().text()
 
     # Асаны
@@ -1756,7 +1752,7 @@ def s_pb_clear_selection_clicked():
         ui.s_lstw_asana.takeItem(ui.s_lstw_asana.count() - 1)
 
 
-def s_lstw_asana_doubleClicked():
+def s_add_asana_in_selected_asanas():
     """Добавление асаны в список 'Выбранные асаны'"""
     ui.s_lstw_asana.setGeometry(160, 170, 381, 111)
     ui.s_l_error_choose_asana.setVisible(False)
@@ -1785,16 +1781,12 @@ def s_lstw_asana_doubleClicked():
                 ui.s_lstw_selected_asanas.addItem(added_asana.name)
 
 
-def s_rb_left_side_clicked():
-    ui.s_l_error_choose_side.setVisible(False)
-
-
-def s_rb_right_side_clicked():
+def s_side_changed():
     ui.s_l_error_choose_side.setVisible(False)
 
 
 # Страница "Создание". Выбранные асаны
-def s_lstw_selected_asanas_doubleClicked():
+def s_delete_asana_from_selected_asanas():
     """Удаление асаны из списка 'Выбранные асаны'"""
     answer = msg_box.question(Sport,
                               'Удаление асаны из списка',
@@ -1808,7 +1800,7 @@ def s_lstw_selected_asanas_doubleClicked():
 
 
 # Страница "Создание". Кнопки
-def s_pb_save_clicked():
+def s_insert_data_stretching():
     # Проверка наличия первой тренировки, чтобы было то, для чего формировать растяжку
     try:
         last_date = db_sport.get_last_date_training('workout')
@@ -1835,7 +1827,7 @@ def s_pb_save_clicked():
                              f'на неделю №{stretching.week_number} и день №{stretching.day_number}!')
 
             # Сброс всех виджетов на странице "Создание" до изначальных настроек
-            s_pb_clear_clicked()
+            s_clear_data_on_page_creature()
         else:
             # Проверка заполненности полей перед сохранением данных
             if is_all_field_filled():
@@ -1878,7 +1870,7 @@ def s_pb_save_clicked():
                 ui.s_tbl_data_stretching.setGeometry(20, 100, 871, 391)
 
                 # Сброс всех виджетов на странице "Создание" до изначальных настроек
-                s_pb_clear_clicked()
+                s_clear_data_on_page_creature()
 
                 # Сброс всех кнопок на странице "Статистика" на False, чтобы там не отображались старые данные
                 radio_buttons = [ui.s_rb_asanas_on_the_sides, ui.s_rb_last_training_asana]
@@ -1898,7 +1890,7 @@ def s_pb_save_clicked():
                 form_training_schedule()
 
 
-def s_pb_clear_clicked():
+def s_clear_data_on_page_creature():
     # Сброс всех виджетов на странице "Создание" до изначальных настроек
     # GroupBox "Этап"
     # Номер недели и номер дня
@@ -1971,12 +1963,12 @@ def form_data_stretching(week_number, day_number):
 
 
 def s_tbl_data_stretching_cellPressed():
-    global connect_s_tbl_data_stretching_cellChanged
+    global connect_s_update_data_stretching
 
     # Проверка того, был ли установлен connect с функцией изменения значения в ячейке до этого
-    if not connect_s_tbl_data_stretching_cellChanged:
-        ui.s_tbl_data_stretching.cellChanged.connect(s_tbl_data_stretching_cellChanged)
-        connect_s_tbl_data_stretching_cellChanged = True
+    if not connect_s_update_data_stretching:
+        ui.s_tbl_data_stretching.cellChanged.connect(s_update_data_stretching)
+        connect_s_update_data_stretching = True
 
     if ui.s_tbl_data_stretching.currentColumn() in range(0, 4) or ui.s_tbl_data_stretching.currentColumn() == 8:
         ui.s_pb_hint_changing_data_stretching.setVisible(False)
@@ -2026,7 +2018,7 @@ def s_tbl_data_stretching_cellPressed():
                 ui.s_tbl_data_stretching.setGeometry(20, 100, 871, 391)
 
 
-def s_tbl_data_stretching_cellChanged():
+def s_update_data_stretching():
     current_row = ui.s_tbl_data_stretching.currentRow()
     current_column = ui.s_tbl_data_stretching.currentColumn()
 
@@ -2144,14 +2136,14 @@ tbl_data_text_before_change = None
 
 # ГЛАВНАЯ
 # Привязка событий с функциями
-ui.pb_open_close_main_menu.clicked.connect(pb_open_close_main_menu_clicked)
-ui.pb_home.clicked.connect(pb_home_clicked)
-ui.pb_yoga.clicked.connect(pb_yoga_clicked)
-ui.pb_workout.clicked.connect(pb_workout_clicked)
-ui.pb_stretching.clicked.connect(pb_stretching_clicked)
-ui.pb_creature.clicked.connect(pb_auxiliary_menu_clicked)
-ui.pb_viewing.clicked.connect(pb_auxiliary_menu_clicked)
-ui.pb_statistic.clicked.connect(pb_auxiliary_menu_clicked)
+ui.pb_open_close_main_menu.clicked.connect(open_or_close_main_menu)
+ui.pb_home.clicked.connect(page_home_activate)
+ui.pb_yoga.clicked.connect(page_yoga_activate)
+ui.pb_workout.clicked.connect(page_workout_activate)
+ui.pb_stretching.clicked.connect(page_stretching_activate)
+ui.pb_creature.clicked.connect(page_from_auxiliary_menu_activate)
+ui.pb_viewing.clicked.connect(page_from_auxiliary_menu_activate)
+ui.pb_statistic.clicked.connect(page_from_auxiliary_menu_activate)
 
 # Заполнение виджетов значениями
 form_training_schedule()
@@ -2167,24 +2159,24 @@ ui.y_tbl_data_yoga.setGeometry(20, 110, 871, 381)
 last_page_yoga = None
 yoga = Yoga()
 minimum_date_yoga = QtCore.QDate()
-connect_y_tbl_data_yoga_cellChanged = False
+connect_y_update_data_yoga = False
 
 # Привязка событий с функциями
 # Страница "Создание". GroupBox "Этап"
-ui.y_sb_week_number.textChanged.connect(week_number_textChanged)
-ui.y_sb_day_number.textChanged.connect(day_number_textChanged)
-ui.y_cw_yoga.clicked.connect(cw_clicked)
+ui.y_sb_week_number.textChanged.connect(week_number_value_changed)
+ui.y_sb_day_number.textChanged.connect(day_number_value_changed)
+ui.y_cw_yoga.clicked.connect(date_changed)
 # Страница "Создание". GroupBox "Описание"
-ui.y_cb_complex.currentTextChanged.connect(y_cb_complex_currentTextChanged)
-ui.y_cb_specialization.currentTextChanged.connect(y_cb_specialization_currentTextChanged)
-ui.y_rb_left_side.clicked.connect(y_rb_left_side_clicked)
-ui.y_rb_right_side.clicked.connect(y_rb_right_side_clicked)
+ui.y_cb_complex.currentTextChanged.connect(y_complex_name_changed)
+ui.y_cb_specialization.currentTextChanged.connect(y_specialization_name_changed)
+ui.y_rb_left_side.clicked.connect(y_side_changed)
+ui.y_rb_right_side.clicked.connect(y_side_changed)
 # Страница "Создание". Кнопки
-ui.y_pb_save.clicked.connect(y_pb_save_clicked)
-ui.y_pb_clear.clicked.connect(y_pb_clear_clicked)
+ui.y_pb_save.clicked.connect(y_insert_data_yoga)
+ui.y_pb_clear.clicked.connect(y_clear_data_on_page_creature)
 # Страница "Просмотр". GroupBox "Этап"
-ui.y_cb_week_number.currentTextChanged.connect(cb_week_number_currentTextChanged)
-ui.y_cb_day_number.currentTextChanged.connect(cb_day_number_currentTextChanged)
+ui.y_cb_week_number.currentTextChanged.connect(cb_week_number_text_changed)
+ui.y_cb_day_number.currentTextChanged.connect(cb_day_number_text_changed)
 # Страница "Просмотр"
 ui.y_tbl_data_yoga.cellPressed.connect(y_tbl_data_yoga_cellPressed)
 # Страница "Статистика". Groupbox "Критерий"
@@ -2234,7 +2226,7 @@ warm_up_2 = Approach()
 pre_worker = Approach()
 worker_1 = Approach()
 worker_2 = Approach()
-connect_w_tbl_data_workout_cellChanged = False
+connect_w_update_data_workout = False
 
 warm_up_1.name = 'Разминка 1'
 warm_up_2.name = 'Разминка 2'
@@ -2244,23 +2236,23 @@ worker_2.name = 'Рабочий 2'
 
 # Привязка событий с функциями
 # Страница "Создание". GroupBox "Этап"
-ui.w_sb_week_number.textChanged.connect(week_number_textChanged)
-ui.w_sb_day_number.textChanged.connect(day_number_textChanged)
-ui.w_cb_mesocycle.currentTextChanged.connect(w_cb_mesocycle_currentTextChanged)
-ui.w_cb_microcycle.currentTextChanged.connect(w_cb_microcycle_currentTextChanged)
-ui.w_cw_workout.clicked.connect(cw_clicked)
+ui.w_sb_week_number.textChanged.connect(week_number_value_changed)
+ui.w_sb_day_number.textChanged.connect(day_number_value_changed)
+ui.w_cb_mesocycle.currentTextChanged.connect(w_mesocycle_name_changed)
+ui.w_cb_microcycle.currentTextChanged.connect(w_microcycle_name_changed)
+ui.w_cw_workout.clicked.connect(date_changed)
 # Страница "Создание". Кнопки
-ui.w_pb_save.clicked.connect(w_pb_save_clicked)
-ui.w_pb_clear.clicked.connect(w_pb_clear_clicked)
+ui.w_pb_save.clicked.connect(w_insert_data_workout)
+ui.w_pb_clear.clicked.connect(w_clear_data_on_page_creature)
 # Страница "Создание". GroupBox "Описание"
-ui.w_cb_muscle_group.currentTextChanged.connect(w_cb_muscle_group_currentTextChanged)
-ui.w_cb_muscle.currentTextChanged.connect(w_cb_muscle_currentTextChanged)
-ui.w_cb_exercise.currentTextChanged.connect(w_cb_exercise_currentTextChanged)
-ui.w_cb_side.currentTextChanged.connect(w_cb_side_currentTextChanged)
-ui.w_dsb_base_weight.textChanged.connect(w_dsb_base_weight_textChanged)
+ui.w_cb_muscle_group.currentTextChanged.connect(w_muscle_group_name_changed)
+ui.w_cb_muscle.currentTextChanged.connect(w_muscle_name_changed)
+ui.w_cb_exercise.currentTextChanged.connect(w_exercise_name_changed)
+ui.w_cb_side.currentTextChanged.connect(w_side_changed)
+ui.w_dsb_base_weight.textChanged.connect(w_base_weight_value_changed)
 # Страница "Просмотр". GroupBox "Этап"
-ui.w_cb_week_number.currentTextChanged.connect(cb_week_number_currentTextChanged)
-ui.w_cb_day_number.currentTextChanged.connect(cb_day_number_currentTextChanged)
+ui.w_cb_week_number.currentTextChanged.connect(cb_week_number_text_changed)
+ui.w_cb_day_number.currentTextChanged.connect(cb_day_number_text_changed)
 # Страница "Просмотр"
 ui.w_tbl_data_workout.cellPressed.connect(w_tbl_data_workout_cellPressed)
 # Страница "Статистика". Groupbox "Критерий"
@@ -2298,7 +2290,7 @@ ui.w_cb_week_number.addItem('Все')
 ui.w_cb_week_number.addItems(workout.week_numbers)
 
 # Специально самостоятельно вызываю этот метод, чтобы корректно выставлялись значения мезоцикла и микроцикла
-day_number_textChanged()
+day_number_value_changed()
 
 # РАСТЯЖКА
 # Страница "Создание". GroupBox "Описание"
@@ -2312,27 +2304,26 @@ ui.s_tbl_data_stretching.setGeometry(20, 100, 871, 391)
 # Создание необходимых экземпляров классов
 last_page_stretching = None
 stretching = Stretching()
-connect_s_tbl_data_stretching_cellChanged = False
+connect_s_update_data_stretching = False
 
 # Привязка событий с функциями
 # Страница "Создание". GroupBox "Этап"
-ui.s_sb_week_number.textChanged.connect(week_number_textChanged)
-ui.s_sb_day_number.textChanged.connect(day_number_textChanged)
+ui.s_sb_week_number.textChanged.connect(week_number_value_changed)
+ui.s_sb_day_number.textChanged.connect(day_number_value_changed)
 # Страница "Создание". GroupBox "Описание"
-ui.s_lstw_involved_muscle.currentTextChanged.connect(s_lstw_involved_muscle_currentTextChanged)
+ui.s_lstw_involved_muscle.currentTextChanged.connect(s_involved_muscle_name_changed)
 ui.s_pb_clear_selection.clicked.connect(s_pb_clear_selection_clicked)
-ui.s_lstw_asana.doubleClicked.connect(s_lstw_asana_doubleClicked)
-ui.s_rb_left_side.clicked.connect(s_rb_left_side_clicked)
-ui.s_rb_right_side.clicked.connect(s_rb_right_side_clicked)
+ui.s_lstw_asana.doubleClicked.connect(s_add_asana_in_selected_asanas)
+ui.s_rb_left_side.clicked.connect(s_side_changed)
+ui.s_rb_right_side.clicked.connect(s_side_changed)
 # Страница "Создание". Выбранные асаны
-ui.s_lstw_selected_asanas.doubleClicked.connect(s_lstw_selected_asanas_doubleClicked)
+ui.s_lstw_selected_asanas.doubleClicked.connect(s_delete_asana_from_selected_asanas)
 # Страница "Создание". Кнопки
-ui.s_pb_save.clicked.connect(s_pb_save_clicked)
-ui.s_pb_clear.clicked.connect(s_pb_clear_clicked)
-
+ui.s_pb_save.clicked.connect(s_insert_data_stretching)
+ui.s_pb_clear.clicked.connect(s_clear_data_on_page_creature)
 # Страница "Просмотр". GroupBox "Этап"
-ui.s_cb_week_number.currentTextChanged.connect(cb_week_number_currentTextChanged)
-ui.s_cb_day_number.currentTextChanged.connect(cb_day_number_currentTextChanged)
+ui.s_cb_week_number.currentTextChanged.connect(cb_week_number_text_changed)
+ui.s_cb_day_number.currentTextChanged.connect(cb_day_number_text_changed)
 # Страница "Просмотр"
 ui.s_tbl_data_stretching.cellPressed.connect(s_tbl_data_stretching_cellPressed)
 # Страница "Статистика". Groupbox "Критерий"
@@ -2373,7 +2364,7 @@ ui.s_cb_week_number.addItem('Все')
 ui.s_cb_week_number.addItems(stretching.week_numbers)
 
 # Установка страницы "Главная" активной при инициализации
-pb_home_clicked()
+page_home_activate()
 
 Sport.show()
 sys.exit(app.exec_())

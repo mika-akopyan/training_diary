@@ -265,11 +265,7 @@ class Asanas(Items):
 
 class Complex(Element):
     """Элемент, предназначенный для заполнения экземпляра класса Complexes"""
-
-    @property
-    def specializtions(self) -> Specializations:
-        self.__specializtions = Specializations()
-        return self.__specializtions
+    pass
 
 
 class Complexes(Items):
@@ -327,11 +323,11 @@ class Exercise(Element):
             worker_1_reps_quantity: int,
             worker_2_reps_quantity: int) -> int:
         """Возвращает КПШ"""
-        self.__qrl = warm_up_1_reps_quantity + \
-                     warm_up_2_reps_quantity + \
-                     pre_worker_reps_quantity + \
-                     worker_1_reps_quantity + \
-                     worker_2_reps_quantity
+        self.__qrl = (warm_up_1_reps_quantity +
+                      warm_up_2_reps_quantity +
+                      pre_worker_reps_quantity +
+                      worker_1_reps_quantity +
+                      worker_2_reps_quantity)
         return self.__qrl
 
     def training_volume(self,
@@ -402,11 +398,7 @@ class Microcycles(Items):
 
 class MuscleGroup(Element):
     """Элемент, предназначенный для заполнения экземпляра класса MuscleGroups"""
-
-    @property
-    def muscles(self) -> Muscles:
-        self.__muscles = Muscles()
-        return self.__muscles
+    pass
 
 
 class MuscleGroups(Items):
@@ -419,11 +411,7 @@ class MuscleGroups(Items):
 
 class Muscle(Element):
     """Элемент, предназначенный для заполнения экземпляра класса Muscles"""
-
-    @property
-    def exercises(self) -> Exercises:
-        self.__exercises = Exercises()
-        return self.__exercises
+    pass
 
 
 class Muscles(Items):
@@ -436,11 +424,7 @@ class Muscles(Items):
 
 class Specialization(Element):
     """Элемент, предназначенный для заполнения экземпляра класса Specializations"""
-
-    @property
-    def asanas(self) -> Asanas:
-        self.__asanas = Asanas()
-        return self.__asanas
+    pass
 
 
 class Specializations(Items):
