@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная страница</title>
+    <title>{% block title %}{% endblock title %}</title>
     <link rel="stylesheet" href="{% static "main/css/main.css" %}">
 </head>
 <body>
@@ -14,9 +14,9 @@
             <li><a href="{% url "home" %}">Главная</a></li>
             <li>Тренировка
                 <ul>
-                    <li><a href="">Создание</a></li>
-                    <li><a href="">Просмотр</a></li>
-                    <li><a href="">Упражнения</a></li>
+                    <li><a href="{% url "workout_creation" %}">Создание</a></li>
+                    <li><a href="{% url "workout_viewing" %}">Просмотр</a></li>
+                    <li><a href="{% url "exercises" %}">Упражнения</a></li>
                 </ul>
             </li>
         </ul>
