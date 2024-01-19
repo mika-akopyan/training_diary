@@ -1,0 +1,18 @@
+aside {
+    background: rgb(0, 85, 255);
+    width: 200px;
+    height: 600px;
+    border-right: 5px solid #000;
+    float: left;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li,
+aside ul li a {
+    display: block;
+    margin-top: 10px;
+    color: rgb(255, 253, 255);
+}
