@@ -16,7 +16,7 @@
             <p>{{ exercise.technique_execution }}</p>
         {% endif %}
         <a href="{{ exercise.get_absolute_url }}">Читать детальнее</a>
-        <a href="">Редактировать</a>
+        <a href="{% url "exercise_update" exercise.pk %}">Редактировать</a>
     {% endfor %}
 
     {% comment %} Отображение пагинации {% endcomment %}

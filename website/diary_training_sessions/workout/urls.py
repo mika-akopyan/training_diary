@@ -8,4 +8,5 @@ urlpatterns = [
     path('exercises/', ExercisesList.as_view(), name='exercises_list'),
     path('exercises/add/', ExerciseAdd.as_view(), name='exercise_add'),
     path('exercises/<str:exercise_pk>/', ExerciseDetail.as_view(), name='exercise_detail'),
+    path('exercises/<str:exercise_pk>/update/', ExerciseUpdate.as_view(), name='exercise_update'),
 ]

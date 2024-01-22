@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView, CreateView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView
 from django.urls import reverse_lazy
 
 from .models import *
@@ -26,7 +26,7 @@ class ExerciseAdd(CreateView):
     form_class = ExercisesForm
     template_name = 'workout/exercise_add.html'
     context_object_name = 'form'
-    success_url = reverse_lazy('exercises')
+    success_url = reverse_lazy('exercises_list')
 
 
 class ExerciseDetail(DetailView):
@@ -34,3 +34,12 @@ class ExerciseDetail(DetailView):
     template_name = 'workout/exercise_detail.html'
     context_object_name = 'exercise'
     pk_url_kwarg = 'exercise_pk'
+
+
+class ExerciseUpdate(UpdateView):
+    form_class = ExercisesForm
+    model = Exercises
+    template_name = 'workout/exercise_update.html'
+    context_object_name = 'form'
+    pk_url_kwarg = 'exercise_pk'
+    success_url = reverse_lazy('exercises_list')
