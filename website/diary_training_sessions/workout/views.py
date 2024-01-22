@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from django.views.generic import ListView
+
+from .models import *
 
 # Create your views here.
 
@@ -10,5 +13,8 @@ def viewing(request):
     return render(request, 'workout/viewing.html')
 
 
-def exercises(request):
-    return render(request, 'workout/exercises.html')
+class ExercisesView(ListView):
+    model = Exercises
+    template_name = 'workout/exercises.html'
+    context_object_name = 'exercises'
+    paginate_by = 7

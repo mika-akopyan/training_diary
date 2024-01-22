@@ -8,6 +8,7 @@
 from django.db import models
 
 
+
 class DataWorkout(models.Model):
     week_field = models.IntegerField(db_column='week_тДЦ')  # Field renamed to remove unsuitable characters. Field renamed because it ended with '_'.
     day_field = models.IntegerField(db_column='day_тДЦ')  # Field renamed to remove unsuitable characters. Field renamed because it ended with '_'.
@@ -48,6 +49,7 @@ class Exercises(models.Model):
     sides_quantity = models.IntegerField()
 
     class Meta:
+        ordering = ['exercise']
         db_table = 'exercises'
 
 

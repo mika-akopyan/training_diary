@@ -3,5 +3,25 @@
 {% block title %}Упражнения{% endblock title %}
 
 {% block content %}
-    <h1>Упражнения</h1>
+    <a href="">Добавить упражнение</a>
+
+    {% comment %} Отображение упражнений и доп информации о них {% endcomment %}
+    {% for exercise in exercises %}
+        <h3>{{ exercise.exercise }}</h3>
+        <p><em>Техника выполнения:</em></p>
+        {% if not exercise.technique_execution %}
+            <p>Отсутствует техника выполнения.</p>
+        {% else %}
+            <p>{{ exercise.technique_execution }}</p>
+        {% endif %}
+        <a href="">Читать детальнее</a>
+        <a href="">Редактировать</a>
+    {% endfor %}
+
+    {% comment %} Отображение пагинации {% endcomment %}
+    {% if page_obj.has_other_pages %}
+        {% for page in paginator.page_range %}
+            <a href="?page={{ page }}">{{ page }}</a>
+        {% endfor %}
+    {% endif %}
 {% endblock content %}
