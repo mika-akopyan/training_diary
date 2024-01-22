@@ -22,15 +22,15 @@ class ExercisesList(ListView):
     paginate_by = 7
 
 
-class ExerciseDetail(DetailView):
-    model = Exercises
-    template_name = 'workout/exercise_detail.html'
-    context_object_name = 'exercise'
-    pk_url_kwarg = 'exercise_pk'
-
-
 class ExerciseAdd(CreateView):
     form_class = ExercisesForm
     template_name = 'workout/exercise_add.html'
     context_object_name = 'form'
     success_url = reverse_lazy('exercises')
+
+
+class ExerciseDetail(DetailView):
+    model = Exercises
+    template_name = 'workout/exercise_detail.html'
+    context_object_name = 'exercise'
+    pk_url_kwarg = 'exercise_pk'
