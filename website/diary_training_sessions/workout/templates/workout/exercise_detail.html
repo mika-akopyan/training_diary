@@ -1,0 +1,15 @@
+{% extends "main/base.html" %}
+
+{% block title %}{{ exercise.exercise }}{% endblock title %}
+
+{% block content %}
+    {% comment %} Отображение упражнения и доп информации о нем {% endcomment %}
+    <h3>{{ exercise.exercise }}</h3>
+    <p><em>Техника выполнения:</em></p>
+    {% if not exercise.technique_execution %}
+        <p>Отсутствует техника выполнения.</p>
+    {% else %}
+        <p>{{ exercise.technique_execution }}</p>
+    {% endif %}
+    <a href="">Редактировать</a>
+{% endblock content %}
