@@ -3,7 +3,8 @@
 {% block title %}Упражнения{% endblock title %}
 
 {% block content %}
-    <a href="">Добавить упражнение</a>
+    <h1>Список упражнений</h1>
+    <a href="{% url "exercise_add" %}">Добавить упражнение</a>
 
     {% comment %} Отображение упражнений и доп информации о них {% endcomment %}
     {% for exercise in exercises %}
