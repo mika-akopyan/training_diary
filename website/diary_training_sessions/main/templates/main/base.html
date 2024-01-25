@@ -10,13 +10,21 @@
 </head>
 <body>
     <aside>
-        <ul>
-            <li><a href="{% url "home" %}">Главная</a></li>
-            <li>Тренировка
+        <ul class='menu'>
+            <li class='menu__item'>
+                <a class='menu__item-link' href="{% url "home" %}">Главная</a>
+            </li>
+            <li class='menu__item'>Тренировка
                 <ul>
-                    <li><a href="{% url "workout_creation" %}">Создание</a></li>
-                    <li><a href="{% url "workout_viewing" %}">Просмотр</a></li>
-                    <li><a href="{% url "exercises_list" %}">Упражнения</a></li>
+                    <li class='menu__item'>
+                        <a class='menu__item-link' href="{% url "workout_creation" %}">Создание</a>
+                    </li>
+                    <li class='menu__item'>
+                        <a class='menu__item-link' href="{% url "workout_viewing" %}">Просмотр</a>
+                    </li>
+                    <li class='menu__item'>
+                        <a class='menu__item-link' href="{% url "exercises_list" %}">Упражнения</a>
+                    </li>
                 </ul>
             </li>
         </ul>

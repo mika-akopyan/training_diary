@@ -1,17 +1,30 @@
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: rgb(230, 230, 230);
+}
+
 aside {
-    background: rgb(0, 85, 255);
-    width: 200px;
-    height: 600px;
-    border-right: 5px solid #000;
+    min-height: 100%;
+    width: 230px;
     float: left;
 }
 
-aside ul {
+aside {
+    background: rgb(26, 101, 252);
+}
+
+.menu {
     list-style: none;
 }
 
-aside ul li,
-aside ul li a {
+.menu__item,
+.menu__item-link {
     display: block;
     margin-top: 10px;
     color: rgb(255, 253, 255);
