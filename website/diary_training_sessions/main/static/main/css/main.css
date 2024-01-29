@@ -7,7 +7,7 @@ body {
 }
 
 body {
-    background: rgb(230, 230, 230);
+    background: rgb(235, 235, 235);
 }
 
 aside {
@@ -52,10 +52,21 @@ aside {
     display: inline-block;
     height: 20px;
     margin-top: 10px;
+    margin-bottom: 10px;
     padding: 10px;
 }
 
 .pagination {
+    border-radius: 7px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgb(180, 180, 180);
+}
+
+.exercise-container {
+    margin-right: 10px;
+}
+
+.exercise-container {
     border-radius: 7px;
     background: rgb(255, 255, 255);
     box-shadow: 0 0 5px rgb(180, 180, 180);

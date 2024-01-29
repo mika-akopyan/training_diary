@@ -8,18 +8,20 @@
 
     {% comment %} Отображение упражнений и доп информации о них {% endcomment %}
     {% for exercise in exercises %}
-        <h3>{{ exercise.exercise }}</h3>
-        <p><em>Техника выполнения:</em></p>
-        {% if not exercise.technique_execution %}
-            <p>Отсутствует техника выполнения.</p>
-        {% else %}
-            <p>{{ exercise.technique_execution }}</p>
-        {% endif %}
-        <a href="{{ exercise.get_absolute_url }}">Читать детальнее</a>
-        <a href="{% url "workout:exercise_update" exercise.pk %}">Редактировать</a>
+        <div class="exercise-container">
+            <h3>{{ exercise.exercise }}</h3>
+            <p><em>Техника выполнения:</em></p>
+            {% if not exercise.technique_execution %}
+                <p>Отсутствует техника выполнения.</p>
+            {% else %}
+                <p>{{ exercise.technique_execution }}</p>
+            {% endif %}
+            <a href="{{ exercise.get_absolute_url }}">Читать детальнее</a>
+            <a href="{% url "workout:exercise_update" exercise.pk %}">Редактировать</a>
+        </div>
     {% endfor %}
     <br>
-    
+
     {% comment %} Отображение пагинации {% endcomment %}
     {% if page_obj.has_other_pages %}
         <div class="pagination">
