@@ -43,14 +43,13 @@ class DataWorkout(models.Model):
 
 
 class Exercises(models.Model):
-    muscle = models.ForeignKey('Muscles', models.DO_NOTHING, db_column='muscle')
-    exercise = models.CharField(primary_key=True, max_length=100)
-    technique_execution = models.TextField(blank=True, null=True)
-    sides_quantity = models.IntegerField()
+    muscle = models.ForeignKey('Muscles', models.DO_NOTHING, db_column='muscle', verbose_name='Мышца')
+    exercise = models.CharField(verbose_name='Упражнение', primary_key=True, max_length=100)
+    technique_execution = models.TextField(verbose_name='Техника выполнения', blank=True, null=True)
+    sides_quantity = models.IntegerField(verbose_name='Количество сторон')
 
     def get_absolute_url(self):
         return reverse("exercise_detail", kwargs={"exercise_pk": self.pk})
-    
 
     class Meta:
         ordering = ['exercise']
@@ -82,6 +81,9 @@ class MuscleGroups(models.Model):
 class Muscles(models.Model):
     muscle_group = models.ForeignKey(MuscleGroups, models.DO_NOTHING, db_column='muscle_group')
     muscle = models.CharField(primary_key=True, max_length=40)
+
+    def __str__(self) -> str:
+        return self.muscle
 
     class Meta:
         db_table = 'muscles'
