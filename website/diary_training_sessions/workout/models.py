@@ -49,7 +49,7 @@ class Exercises(models.Model):
     sides_quantity = models.IntegerField(verbose_name='Количество сторон')
 
     def get_absolute_url(self):
-        return reverse("exercise_detail", kwargs={"exercise_pk": self.pk})
+        return reverse("workout:exercise_detail", kwargs={"exercise_pk": self.pk})
 
     class Meta:
         ordering = ['exercise']

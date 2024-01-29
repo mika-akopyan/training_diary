@@ -11,5 +11,5 @@
     {% else %}
         <p>{{ exercise.technique_execution }}</p>
     {% endif %}
-    <a href="">Редактировать</a>
+    <a href="{% url "workout:exercise_update" exercise.pk %}">Редактировать</a>
 {% endblock content %}

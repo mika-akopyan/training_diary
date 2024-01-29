@@ -15,31 +15,31 @@ def viewing(request):
     return render(request, 'workout/viewing.html')
 
 
-class ExercisesList(ListView):
+class ExercisesListView(ListView):
     model = Exercises
     template_name = 'workout/exercises_list.html'
     context_object_name = 'exercises'
     paginate_by = 7
 
 
-class ExerciseAdd(CreateView):
+class ExerciseAddView(CreateView):
     form_class = ExercisesForm
     template_name = 'workout/exercise_add.html'
     context_object_name = 'form'
-    success_url = reverse_lazy('exercises_list')
+    success_url = reverse_lazy('workout:exercises_list')
 
 
-class ExerciseDetail(DetailView):
+class ExerciseDetailView(DetailView):
     model = Exercises
     template_name = 'workout/exercise_detail.html'
     context_object_name = 'exercise'
     pk_url_kwarg = 'exercise_pk'
 
 
-class ExerciseUpdate(UpdateView):
+class ExerciseUpdateView(UpdateView):
     form_class = ExercisesForm
     model = Exercises
     template_name = 'workout/exercise_update.html'
     context_object_name = 'form'
     pk_url_kwarg = 'exercise_pk'
-    success_url = reverse_lazy('exercises_list')
+    success_url = reverse_lazy('workout:exercises_list')
