@@ -1,6 +1,7 @@
 html,
 body {
     height: 100%;
+    width: 100%;
     margin: 0px;
     padding: 0px;
 }
@@ -12,10 +13,17 @@ body {
 aside {
     min-height: 100%;
     width: 230px;
-    float: left;
+    position: fixed;
+    margin: 10px;
+
+}
+
+main {
+    margin-left: 250px;
 }
 
 aside {
+    border-radius: 7px;
     background: rgb(26, 101, 252);
 }
 
@@ -28,4 +36,11 @@ aside {
     display: block;
     margin-top: 10px;
     color: rgb(255, 253, 255);
+    height: 20px;
+    width: 100px;
+}
+
+.menu__item-link:hover {
+    background: rgb(255, 253, 255);
+    color: rgb(26, 101, 252);
 }
