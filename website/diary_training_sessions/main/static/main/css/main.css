@@ -13,9 +13,8 @@ body {
 aside {
     min-height: 100%;
     width: 230px;
-    position: fixed;
     margin: 10px;
-
+    position: fixed;
 }
 
 main {
@@ -34,13 +33,30 @@ aside {
 .menu__item,
 .menu__item-link {
     display: block;
-    margin-top: 10px;
-    color: rgb(255, 253, 255);
     height: 20px;
     width: 100px;
+    margin-top: 10px;
+}
+
+.menu__item,
+.menu__item-link {
+    color: rgb(255, 255, 255);
 }
 
 .menu__item-link:hover {
-    background: rgb(255, 253, 255);
+    background: rgb(255, 255, 255);
     color: rgb(26, 101, 252);
+}
+
+.pagination {
+    display: inline-block;
+    height: 20px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.pagination {
+    border-radius: 7px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgb(180, 180, 180);
 }
