@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView, CreateView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView
 from django.urls import reverse_lazy
 
 from .models import *
@@ -34,3 +34,12 @@ class AsanaDetailView(DetailView):
     template_name = 'yoga/asana_detail.html'
     context_object_name = 'asana'
     pk_url_kwarg = 'asana_pk'
+
+
+class AsanaUpdateView(UpdateView):
+    form_class = AsanasForm
+    model = Asanas
+    template_name = 'yoga/asana_update.html'
+    context_object_name = 'form'
+    pk_url_kwarg = 'asana_pk'
+    success_url = reverse_lazy('yoga:asana_list')
