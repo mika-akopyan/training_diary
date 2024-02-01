@@ -61,11 +61,13 @@ aside {
     box-shadow: 0 0 5px rgb(180, 180, 180);
 }
 
-.exercise-container {
+.exercise-container,
+.asana-container {
     margin-right: 10px;
 }
 
-.exercise-container {
+.exercise-container,
+.asana-container {
     border-radius: 7px;
     background: rgb(255, 255, 255);
     box-shadow: 0 0 5px rgb(180, 180, 180);
