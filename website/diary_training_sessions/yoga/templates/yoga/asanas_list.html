@@ -9,15 +9,17 @@
     {% comment %} Отображение асан и доп информации о них {% endcomment %}
     {% for asana in asanas %}
         <div class="asana-container">
-            <h3>{{ asana.asana }}</h3>
+            <h3 class='asana-name'>{{ asana.asana }}</h3>
             <p><em>Техника выполнения:</em></p>
             {% if not asana.technique_execution %}
                 <p>Отсутствует техника выполнения.</p>
             {% else %}
                 <p>{{ asana.technique_execution }}</p>
             {% endif %}
-            <a href="{{ asana.get_absolute_url }}">Читать детальнее</a>
-            <a href="{% url "yoga:asana_update" asana.pk %}">Редактировать</a>
+            <div class="asana-container__button-wrapper">
+                <a href="{{ asana.get_absolute_url }}">Читать детальнее</a>
+                <a href="{% url "yoga:asana_update" asana.pk %}">Редактировать</a>
+            </div>
         </div>
     {% endfor %}
 
