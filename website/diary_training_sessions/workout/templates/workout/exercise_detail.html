@@ -9,7 +9,7 @@
     {% if not exercise.technique_execution %}
         <p>Отсутствует техника выполнения.</p>
     {% else %}
-        <p>{{ exercise.technique_execution }}</p>
+        <p>{{ exercise.technique_execution|linebreaks }}</p>
     {% endif %}
     <a href="{% url "workout:exercise_update" exercise.pk %}">Редактировать</a>
 {% endblock content %}

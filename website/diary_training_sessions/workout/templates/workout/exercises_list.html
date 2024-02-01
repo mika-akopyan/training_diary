@@ -14,7 +14,7 @@
             {% if not exercise.technique_execution %}
                 <p>Отсутствует техника выполнения.</p>
             {% else %}
-                <p>{{ exercise.technique_execution }}</p>
+                <p>{{ exercise.technique_execution|linebreaks|truncatewords:30 }}</p>
             {% endif %}
             <div class="exercise-container__button-wrapper">
                 <a href="{{ exercise.get_absolute_url }}">Читать детальнее</a>
