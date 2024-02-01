@@ -72,7 +72,12 @@ aside {
     box-shadow: 0 0 5px rgb(180, 180, 180);
 }
 
-.page-link_isactive {
+.pagination__page-link {
+    margin-left: 2px;
+    padding: 5px;
+}
+
+.page-link_current {
     border-radius: 3px;
     background: rgb(26, 101, 252);
     color: rgb(255, 255, 255);

@@ -9,7 +9,7 @@
             {% for page in paginator.page_range %}
                 {% if page >= page_obj.number|add:-2 and page <= page_obj.number|add:2 %}
                     {% if page == page_obj.number %}
-                        <a class='pagination__page-link page-link_isactive' href="?page={{ page }}">{{ page }}</a>
+                        <a class='pagination__page-link page-link_current' href="?page={{ page }}">{{ page }}</a>
                     {% else %}
                         <a class='pagination__page-link' href="?page={{ page }}">{{ page }}</a>
                     {% endif %}
