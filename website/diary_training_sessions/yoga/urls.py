@@ -6,5 +6,5 @@ app_name = 'yoga'
 urlpatterns = [
     path('creation/', creation, name='creation'),
     path('viewing/', viewing, name='viewing'),
-    path('asanas/', asanas, name='asanas_list'),
+    path('asanas/', AsanasListView.as_view(), name='asanas_list'),
 ]

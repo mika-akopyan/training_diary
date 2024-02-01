@@ -11,10 +11,12 @@ from django.db import models
 class Asanas(models.Model):
     sequence_number = models.SmallIntegerField()
     asana = models.CharField(primary_key=True, max_length=70)
+    technique_execution = models.TextField(blank=True, null=True)
     works_time = models.CharField(max_length=30, blank=True, null=True)
     sides_quantity = models.IntegerField()
 
     class Meta:
+        ordering = ['asana']
         db_table = 'asanas'
 
 

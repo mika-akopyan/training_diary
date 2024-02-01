@@ -3,5 +3,36 @@
 {% block title %}Асаны{% endblock title %}
 
 {% block content %}
-    <h1>Список асан</h1>
+    <h1>Асаны</h1>
+    <a href="">Добавить асану</a>
+
+    {% comment %} Отображение асан и доп информации о них {% endcomment %}
+    {% for asana in asanas %}
+        <h3>{{ asana.asana }}</h3>
+        <p><em>Техника выполнения:</em></p>
+        {% if not asana.technique_execution %}
+            <p>Отсутствует техника выполнения.</p>
+        {% else %}
+            <p>{{ asana.technique_execution }}</p>
+        {% endif %}
+        <a href="">Читать детальнее</a>
+        <a href="">Редактировать</a>
+    {% endfor %}
+
+    {% comment %} Отображение пагинации {% endcomment %}
+    {% if page_obj.has_other_pages %}
+        {% if page_obj.has_previous %}
+            <a href="?page={{ page_obj.previous_page_number }}">Предыдущая</a>
+        {% endif %}
+
+        {% for page in paginator.page_range %}
+            {% if page >= page_obj.number|add:-2 and page <= page_obj.number|add:2 %}
+                <a href="?page={{ page }}">{{ page }}</a>
+            {% endif %}
+        {% endfor %}
+        
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">Следующая</a>
+        {% endif %}
+    {% endif %}
 {% endblock content %}
