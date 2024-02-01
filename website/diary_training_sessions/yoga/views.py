@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 
 from .models import *
 
@@ -18,3 +18,10 @@ class AsanasListView(ListView):
     template_name = 'yoga/asanas_list.html'
     context_object_name = 'asanas'
     paginate_by = 7
+
+
+class AsanaDetailView(DetailView):
+    model = Asanas
+    template_name = 'yoga/asana_detail.html'
+    context_object_name = 'asana'
+    pk_url_kwarg = 'asana_pk'

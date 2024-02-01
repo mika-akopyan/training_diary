@@ -6,6 +6,7 @@
 #   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
 # Feel free to rename the models, but don't rename db_table values or field names.
 from django.db import models
+from django.urls import reverse
 
 
 class Asanas(models.Model):
@@ -14,6 +15,9 @@ class Asanas(models.Model):
     technique_execution = models.TextField(blank=True, null=True)
     works_time = models.CharField(max_length=30, blank=True, null=True)
     sides_quantity = models.IntegerField()
+
+    def get_absolute_url(self):
+        return reverse("yoga:asana_detail", kwargs={"asana_pk": self.pk})
 
     class Meta:
         ordering = ['asana']

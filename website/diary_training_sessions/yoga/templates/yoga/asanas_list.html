@@ -15,7 +15,7 @@
         {% else %}
             <p>{{ asana.technique_execution }}</p>
         {% endif %}
-        <a href="">Читать детальнее</a>
+        <a href="{{ asana.get_absolute_url }}">Читать детальнее</a>
         <a href="">Редактировать</a>
     {% endfor %}
 
