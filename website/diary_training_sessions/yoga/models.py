@@ -10,11 +10,11 @@ from django.urls import reverse
 
 
 class Asanas(models.Model):
-    sequence_number = models.SmallIntegerField()
-    asana = models.CharField(primary_key=True, max_length=70)
-    technique_execution = models.TextField(blank=True, null=True)
-    works_time = models.CharField(max_length=30, blank=True, null=True)
-    sides_quantity = models.IntegerField()
+    sequence_number = models.SmallIntegerField(verbose_name='Порядковый номер')
+    asana = models.CharField(primary_key=True, max_length=70, verbose_name='Асана')
+    technique_execution = models.TextField(blank=True, null=True, verbose_name='Техника выполнения')
+    works_time = models.CharField(max_length=30, blank=True, null=True, verbose_name='Время работы')
+    sides_quantity = models.IntegerField(verbose_name='Количество сторон')
 
     def get_absolute_url(self):
         return reverse("yoga:asana_detail", kwargs={"asana_pk": self.pk})

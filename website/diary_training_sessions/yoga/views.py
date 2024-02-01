@@ -1,7 +1,9 @@
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView
+from django.urls import reverse_lazy
 
 from .models import *
+from .forms import *
 
 # Create your views here.
 
@@ -18,6 +20,13 @@ class AsanasListView(ListView):
     template_name = 'yoga/asanas_list.html'
     context_object_name = 'asanas'
     paginate_by = 7
+
+
+class AsanaAddView(CreateView):
+    form_class = AsanasForm
+    template_name = 'yoga/asana_add.html'
+    context_object_name = 'form'
+    success_url = reverse_lazy('yoga:asanas')
 
 
 class AsanaDetailView(DetailView):

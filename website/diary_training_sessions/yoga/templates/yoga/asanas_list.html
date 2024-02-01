@@ -4,7 +4,7 @@
 
 {% block content %}
     <h1>Асаны</h1>
-    <a href="">Добавить асану</a>
+    <a href="{% url "yoga:asana_add" %}">Добавить асану</a>
 
     {% comment %} Отображение асан и доп информации о них {% endcomment %}
     {% for asana in asanas %}
