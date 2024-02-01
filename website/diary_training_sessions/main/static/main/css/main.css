@@ -6,6 +6,13 @@ body {
     padding: 0px;
 }
 
+html,
+body,
+.form-add__button {
+    font-family: 'Bahnschrift';
+    font-size: 15px;
+}
+
 body {
     background: rgb(235, 235, 235);
 }
