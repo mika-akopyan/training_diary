@@ -47,6 +47,10 @@ aside {
     color: rgb(26, 101, 252);
 }
 
+.pagination-wrapper {
+    text-align: center;
+}
+
 .pagination {
     display: inline-block;
     height: 20px;
@@ -59,6 +63,12 @@ aside {
     border-radius: 7px;
     background: rgb(255, 255, 255);
     box-shadow: 0 0 5px rgb(180, 180, 180);
+}
+
+.page-link_isactive {
+    border-radius: 3px;
+    background: rgb(26, 101, 252);
+    color: rgb(255, 255, 255);
 }
 
 .exercise-container,

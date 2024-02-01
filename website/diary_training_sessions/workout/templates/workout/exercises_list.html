@@ -20,7 +20,6 @@
             <a href="{% url "workout:exercise_update" exercise.pk %}">Редактировать</a>
         </div>
     {% endfor %}
-    <br>
 
     {% comment %} Отображение пагинации {% endcomment %}
     {% include "workout/pagination.html" %}
