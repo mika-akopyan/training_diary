@@ -26,7 +26,7 @@
             {% endif %}
             <div class="asana__actions">
                 {% comment %} <a href="{{ asana.get_absolute_url }}">Читать детальнее</a> {% endcomment %}
-                <a class='actions__link-delete' href=''><i class="bi bi-trash-fill"></i> Удалить</a>
+                <a class='actions__link-delete' href='{% url "yoga:asana_delete" asana.pk %}'><i class="bi bi-trash-fill"></i> Удалить</a>
                 <a class='actions__link-edit' href="{% url "yoga:asana_update" asana.pk %}"><i class="bi bi-pencil-fill"></i> Редактировать</a>
             </div>
         </div>

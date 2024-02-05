@@ -10,4 +10,5 @@ urlpatterns = [
     path('exercises/add/', AsanaAddView.as_view(), name='asana_add'),
     path('asanas/<str:asana_pk>/', AsanaDetailView.as_view(), name='asana_detail'),
     path('asanas/<str:asana_pk>/update/', AsanaUpdateView.as_view(), name='asana_update'),
+    path('asanas/<str:asana_pk>/delete/', AsanaDeleteView.as_view(), name='asana_delete'),
 ]

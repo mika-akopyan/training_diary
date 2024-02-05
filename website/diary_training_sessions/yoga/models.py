@@ -18,6 +18,9 @@ class Asanas(models.Model):
 
     def get_absolute_url(self):
         return reverse("yoga:asana_detail", kwargs={"asana_pk": self.pk})
+    
+    def __str__(self) -> str:
+        return self.asana
 
     class Meta:
         ordering = ['asana']
