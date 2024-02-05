@@ -1,6 +1,13 @@
 {% extends "main/base.html" %}
 
+{% load static %}
+
 {% block title %}Упражнения{% endblock title %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static "workout/css/exercises_list.css" %}">
+    <link rel="stylesheet" href="{% static "workout/css/pagination.css" %}">
+{% endblock link %}
 
 {% block content %}
     <h1>Список упражнений</h1>

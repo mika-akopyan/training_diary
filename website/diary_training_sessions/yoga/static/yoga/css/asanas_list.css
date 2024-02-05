@@ -1,0 +1,25 @@
+.asana__name {
+    margin-top: 0px;
+}
+
+.asana {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin: 10px;
+    margin-left: 0px;
+    padding: 15px;
+}
+
+.asana {
+    border-radius: 7px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgb(180, 180, 180);
+}
+
+.asana__actions {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    margin: 10px;
+}

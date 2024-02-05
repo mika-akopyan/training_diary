@@ -1,6 +1,13 @@
 {% extends "main/base.html" %}
 
+{% load static %}
+
 {% block title %}Асаны{% endblock title %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static "yoga/css/asanas_list.css" %}">
+    <link rel="stylesheet" href="{% static "workout/css/pagination.css" %}">
+{% endblock link %}
 
 {% block content %}
     <h1>Асаны</h1>
