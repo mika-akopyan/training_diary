@@ -26,7 +26,7 @@ class AsanaAddView(CreateView):
     form_class = AsanasForm
     template_name = 'yoga/asana_add.html'
     context_object_name = 'form'
-    success_url = reverse_lazy('yoga:asanas')
+    success_url = reverse_lazy('yoga:asanas_list')
 
 
 class AsanaDetailView(DetailView):
@@ -42,4 +42,4 @@ class AsanaUpdateView(UpdateView):
     template_name = 'yoga/asana_update.html'
     context_object_name = 'form'
     pk_url_kwarg = 'asana_pk'
-    success_url = reverse_lazy('yoga:asana_list')
+    success_url = reverse_lazy('yoga:asanas_list')
