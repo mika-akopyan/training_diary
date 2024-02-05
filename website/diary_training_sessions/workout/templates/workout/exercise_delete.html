@@ -1,0 +1,14 @@
+{% extends "main/base.html" %}
+
+{% block title %}Удаление упражнения{% endblock title %}
+
+{% block link %}{% endblock link %}
+
+{% block content %}
+    <h1>Удаление упражнения</h1>
+    <form method="post">
+        {% csrf_token %}
+        <p>Вы действительно хотите удалить упражнение "{{ object }}"?</p>
+        <button type="submit">Удалить</button>
+    </form>    
+{% endblock content %}

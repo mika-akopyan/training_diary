@@ -10,4 +10,5 @@ urlpatterns = [
     path('exercises/add/', ExerciseAddView.as_view(), name='exercise_add'),
     path('exercises/<str:exercise_pk>/', ExerciseDetailView.as_view(), name='exercise_detail'),
     path('exercises/<str:exercise_pk>/update/', ExerciseUpdateView.as_view(), name='exercise_update'),
+    path('exercises/<str:exercise_pk>/delete/', ExerciseDeleteView.as_view(), name='exercise_delete'),
 ]

@@ -50,6 +50,9 @@ class Exercises(models.Model):
 
     def get_absolute_url(self):
         return reverse("workout:exercise_detail", kwargs={"exercise_pk": self.pk})
+    
+    def __str__(self) -> str:
+        return self.exercise
 
     class Meta:
         ordering = ['exercise']
