@@ -14,7 +14,7 @@
             {% if not asana.technique_execution %}
                 <p>Отсутствует техника выполнения.</p>
             {% else %}
-                <p>{{ asana.technique_execution }}</p>
+                <p>{{ asana.technique_execution|linebreaks|truncatewords:70 }}</p>
             {% endif %}
             <div class="asana-container__button-wrapper">
                 <a href="{{ asana.get_absolute_url }}">Читать детальнее</a>
