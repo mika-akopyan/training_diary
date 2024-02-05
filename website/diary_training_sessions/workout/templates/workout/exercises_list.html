@@ -9,7 +9,7 @@
     {% comment %} Отображение упражнений и доп информации о них {% endcomment %}
     {% for exercise in exercises %}
         <div class="exercise-container">
-            <h3 class='exercise-name'>{{ exercise.exercise }}</h3>
+            <h3 class='exercise-name'><a href="{{ exercise.get_absolute_url }}">{{ exercise.exercise }}</a></h3>
             <p><em>Техника выполнения:</em></p>
             {% if not exercise.technique_execution %}
                 <p>Отсутствует техника выполнения.</p>
@@ -17,7 +17,7 @@
                 <p>{{ exercise.technique_execution|linebreaks|truncatewords:30 }}</p>
             {% endif %}
             <div class="exercise-container__button-wrapper">
-                <a href="{{ exercise.get_absolute_url }}">Читать детальнее</a>
+                {% comment %} <a href="{{ exercise.get_absolute_url }}">Читать детальнее</a> {% endcomment %}
                 <a href="{% url "workout:exercise_update" exercise.pk %}">Редактировать</a>
             </div>
         </div>
