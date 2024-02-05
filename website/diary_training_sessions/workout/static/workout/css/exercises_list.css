@@ -23,3 +23,40 @@
     bottom: 0px;
     margin: 10px;
 }
+
+.actions__link-edit,
+.link-add-exercise {
+    padding: 7px;
+}
+
+.actions__link-edit {
+    border: 2px solid rgb(0, 63, 190);
+    border-radius: 4px;
+    background: rgb(26, 101, 252);
+    color: white;
+    text-decoration: none;
+}
+
+.actions__link-edit:hover {
+    box-shadow: 0 0 15px rgb(48, 155, 255);
+}
+
+.actions__link-edit:active {
+    background: rgb(0, 63, 190);
+}
+
+.link-add-exercise {
+    border: 2px solid rgb(1, 148, 1);
+    border-radius: 4px;
+    background: rgb(78, 212, 0);
+    color: white;
+    text-decoration: none;
+}
+
+.link-add-exercise:hover {
+    box-shadow: 0 0 15px rgb(116, 253, 82);
+}
+
+.link-add-exercise:active {
+    background: rgb(1, 148, 1);
+}

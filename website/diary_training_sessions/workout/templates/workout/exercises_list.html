@@ -7,11 +7,12 @@
 {% block link %}
     <link rel="stylesheet" href="{% static "workout/css/exercises_list.css" %}">
     <link rel="stylesheet" href="{% static "workout/css/pagination.css" %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 {% endblock link %}
 
 {% block content %}
     <h1>Список упражнений</h1>
-    <a href="{% url "workout:exercise_add" %}">Добавить упражнение</a>
+    <a class='link-add-exercise' class='link-add-exercise' href="{% url "workout:exercise_add" %}"><i class="bi bi-plus-lg"></i> Добавить упражнение</a>
 
     {% comment %} Отображение упражнений и доп информации о них {% endcomment %}
     {% for exercise in exercises %}
@@ -25,7 +26,7 @@
             {% endif %}
             <div class="exercise__actions">
                 {% comment %} <a href="{{ exercise.get_absolute_url }}">Читать детальнее</a> {% endcomment %}
-                <a class='actions__edit' href="{% url "workout:exercise_update" exercise.pk %}">Редактировать</a>
+                <a class='actions__link-edit' href="{% url "workout:exercise_update" exercise.pk %}"><i class="bi bi-pencil-fill"></i> Редактировать</a>
             </div>
         </div>
     {% endfor %}
