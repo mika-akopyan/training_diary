@@ -83,13 +83,13 @@ aside {
     color: rgb(255, 255, 255);
 }
 
-.exercise-name,
-.asana-name {
+.exercise__name,
+.asana__name {
     margin-top: 0px;
 }
 
-.exercise-container,
-.asana-container {
+.exercise,
+.asana {
     position: relative;
     left: 0px;
     top: 0px;
@@ -98,15 +98,15 @@ aside {
     padding: 15px;
 }
 
-.exercise-container,
-.asana-container {
+.exercise,
+.asana {
     border-radius: 7px;
     background: rgb(255, 255, 255);
     box-shadow: 0 0 5px rgb(180, 180, 180);
 }
 
-.exercise-container__button-wrapper,
-.asana-container__button-wrapper {
+.exercise__actions,
+.asana__actions {
     position: absolute;
     right: 0px;
     bottom: 0px;
