@@ -27,6 +27,15 @@
     padding: 5px;
 }
 
+.pagination__page-link {
+    color: rgb(0, 63, 190);
+    text-decoration: none;
+}
+
+.pagination__page-link:hover {
+    text-decoration: underline;
+}
+
 .page-link_current {
     border-radius: 3px;
     background: rgb(26, 101, 252);
