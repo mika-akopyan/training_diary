@@ -1,6 +1,7 @@
 /* Шрифт для элементов страницы */
 .object__name,
-.object__link-edit {
+.object__link-edit,
+.object__link-delete {
     font-family: 'Bahnschrift';
     font-weight: 600;
     font-stretch: semi-condensed;
@@ -10,4 +11,47 @@ p {
     font-family: 'Bahnschrift';
     font-weight: 300;
     font-stretch: semi-condensed;
+}
+
+/* Общее расположение ссылок с действиями над объектом */
+.object__link-edit,
+.object__link-delete {
+    padding: 7px;
+}
+
+/* Общий внешний вид для ссылок с действиями над объектом */
+.object__link-edit,
+.object__link-delete {
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* Внешний вид ссылки редактировать при различных состояниях */
+.object__link-edit {
+    border: 2px solid rgb(0, 63, 190);
+    background: rgb(26, 101, 252);
+    color: white;
+}
+
+.object__link-edit:hover {
+    box-shadow: 0 0 15px rgb(48, 155, 255);
+}
+
+.object__link-edit:active {
+    background: rgb(0, 63, 190);
+}
+
+/* Внешний вид ссылки удалить при различных состояниях */
+.object__link-delete {
+    border: 2px solid rgb(0, 63, 190);
+    background: white;
+    color: rgb(0, 63, 190);
+}
+
+.object__link-delete:hover {
+    box-shadow: 0 0 15px rgb(48, 155, 255);
+}
+
+.object__link-delete:active {
+    background: rgb(180, 180, 180);
 }

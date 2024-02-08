@@ -6,6 +6,7 @@
 
 {% block link %}
     <link rel="stylesheet" href="{% static "workout/css/exercise_detail.css" %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 {% endblock link %}
 
 {% block content %}
@@ -17,6 +18,6 @@
     {% else %}
         <p class='exercise__technique-execution object__technique-execution'>{{ exercise.technique_execution|linebreaks }}</p>
     {% endif %}
-    <a class='exercise__link-delete object__link-delete' href="{% url "workout:exercise_delete" exercise.pk %}">Удалить</a>
-    <a class='exercise__link-edit object__link-edit' href="{% url "workout:exercise_update" exercise.pk %}">Редактировать</a>
+    <a class='exercise__link-delete object__link-delete' href="{% url "workout:exercise_delete" exercise.pk %}"><i class="bi bi-trash-fill"></i> Удалить</a>
+    <a class='exercise__link-edit object__link-edit' href="{% url "workout:exercise_update" exercise.pk %}"><i class="bi bi-pencil-fill"></i> Редактировать</a>
 {% endblock content %}
