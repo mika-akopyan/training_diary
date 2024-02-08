@@ -1,0 +1,80 @@
+.object__name {
+    margin-top: 0px;
+}
+
+.object {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin: 10px;
+    margin-left: 0px;
+    padding: 15px;
+}
+
+.object {
+    border-radius: 7px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgb(180, 180, 180);
+}
+
+.object__actions {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    margin: 10px;
+}
+
+.actions__link-edit,
+.actions__link-delete,
+.link-add-object {
+    padding: 7px;
+}
+
+.actions__link-edit,
+.actions__link-delete,
+.link-add-object {
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.actions__link-edit {
+    border: 2px solid rgb(0, 63, 190);
+    background: rgb(26, 101, 252);
+    color: white;
+}
+
+.actions__link-edit:hover {
+    box-shadow: 0 0 15px rgb(48, 155, 255);
+}
+
+.actions__link-edit:active {
+    background: rgb(0, 63, 190);
+}
+
+.actions__link-delete {
+    border: 2px solid rgb(0, 63, 190);
+    background: white;
+    color: rgb(0, 63, 190);
+}
+
+.actions__link-delete:hover {
+    box-shadow: 0 0 15px rgb(48, 155, 255);
+}
+
+.actions__link-delete:active {
+    background: rgb(180, 180, 180);
+}
+
+.link-add-object {
+    border: 2px solid rgb(1, 148, 1);
+    background: rgb(78, 212, 0);
+    color: white;
+}
+
+.link-add-object:hover {
+    box-shadow: 0 0 15px rgb(116, 253, 82);
+}
+
+.link-add-object:active {
+    background: rgb(1, 148, 1);
+}

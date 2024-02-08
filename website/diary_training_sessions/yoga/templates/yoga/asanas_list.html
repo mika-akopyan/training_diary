@@ -6,25 +6,24 @@
 
 {% block link %}
     <link rel="stylesheet" href="{% static "yoga/css/asanas_list.css" %}">
-    <link rel="stylesheet" href="{% static "workout/css/pagination.css" %}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 {% endblock link %}
 
 {% block content %}
     <h1>Асаны</h1>
-    <a class='link-add-asana' href="{% url "yoga:asana_add" %}"><i class="bi bi-plus-lg"></i> Добавить асану</a>
+    <a class='link-add-asana link-add-object' href="{% url "yoga:asana_add" %}"><i class="bi bi-plus-lg"></i> Добавить асану</a>
 
     {% comment %} Отображение асан и доп информации о них {% endcomment %}
     {% for asana in asanas %}
-        <div class="asana">
-            <h3 class='asana__name'><a href="{{ asana.get_absolute_url }}">{{ asana.asana }}</a></h3>
+        <div class="asana object">
+            <h3 class='asana__name object__name'><a href="{{ asana.get_absolute_url }}">{{ asana.asana }}</a></h3>
             <p><em>Техника выполнения:</em></p>
             {% if not asana.technique_execution %}
                 <p>Отсутствует техника выполнения.</p>
             {% else %}
-                <p class='asana__technique-execution'>{{ asana.technique_execution|linebreaks|truncatewords:70 }}</p>
+                <p class='asana__technique-execution object__technique-execution'>{{ asana.technique_execution|linebreaks|truncatewords:70 }}</p>
             {% endif %}
-            <div class="asana__actions">
+            <div class="asana__actions object__actions">
                 {% comment %} <a href="{{ asana.get_absolute_url }}">Читать детальнее</a> {% endcomment %}
                 <a class='actions__link-delete' href='{% url "yoga:asana_delete" asana.pk %}'><i class="bi bi-trash-fill"></i> Удалить</a>
                 <a class='actions__link-edit' href="{% url "yoga:asana_update" asana.pk %}"><i class="bi bi-pencil-fill"></i> Редактировать</a>
