@@ -1,14 +1,20 @@
 {% extends "main/base.html" %}
 
+{% load static %}
+
 {% block title %}Редактирование упражнения{% endblock title %}
 
-{% block link %}{% endblock link %}
+{% block link %}
+    <link rel="stylesheet" href="{% static "workout/css/exercise_update.css" %}">
+{% endblock link %}
 
 {% block content %}
     <h1>Редактирование упражнения</h1>
-    <form action="" method="post">
+    <form class='form' action="" method="post">
         {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Редактировать</button>
+        {% for f in form %}
+            <p><label class='form__label' for="{{ f.id_for_label }}">{{ f.label }}:</label>{{ f }}</p>
+        {% endfor %}
+        <button class='form__edit-object' type="submit">Редактировать</button>
     </form>
 {% endblock content %}

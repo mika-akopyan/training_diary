@@ -1,0 +1,12 @@
+@import '../../base/css/form.css';
+
+h1 {
+    font-family: 'Bahnschrift';
+    font-weight: 600;
+}
+
+.form__edit-object {
+    font-family: 'Bahnschrift';
+    font-weight: 600;
+    font-stretch: semi-condensed;
+}
