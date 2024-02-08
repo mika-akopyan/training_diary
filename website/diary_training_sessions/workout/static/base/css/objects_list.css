@@ -1,7 +1,9 @@
+/* Шрифт для заголовка страницы */
 h1 {
     font-family: 'Bahnschrift';
 }
 
+/* Шрифт для остальных элементов страницы */
 .link-add-object,
 .object__name,
 .actions__link-delete,
@@ -17,10 +19,12 @@ p {
     font-stretch: semi-condensed;
 }
 
+/* Расположение имени объекта */
 .object__name {
     margin-top: 0px;
 }
 
+/* Расположение контейнера с описанием объекта */
 .object {
     position: relative;
     left: 0px;
@@ -30,12 +34,14 @@ p {
     padding: 15px;
 }
 
+/* Внешний вид контейнера с описанием объекта */
 .object {
     border-radius: 7px;
     background: rgb(255, 255, 255);
     box-shadow: 0 0 5px rgb(180, 180, 180);
 }
 
+/* Расположение контейнера с действиями над объектом */
 .object__actions {
     position: absolute;
     right: 0px;
@@ -43,12 +49,14 @@ p {
     margin: 10px;
 }
 
+/* Общее расположение ссылок с действиями над объектом */
 .actions__link-edit,
 .actions__link-delete,
 .link-add-object {
     padding: 7px;
 }
 
+/* Общий внешний вид для ссылок с действиями над объектом */
 .actions__link-edit,
 .actions__link-delete,
 .link-add-object {
@@ -56,6 +64,7 @@ p {
     text-decoration: none;
 }
 
+/* Внешний вид ссылки редактировать при различных состояниях */
 .actions__link-edit {
     border: 2px solid rgb(0, 63, 190);
     background: rgb(26, 101, 252);
@@ -70,6 +79,7 @@ p {
     background: rgb(0, 63, 190);
 }
 
+/* Внешний вид ссылки удалить при различных состояниях */
 .actions__link-delete {
     border: 2px solid rgb(0, 63, 190);
     background: white;
@@ -84,6 +94,7 @@ p {
     background: rgb(180, 180, 180);
 }
 
+/* Внешний вид ссылки удалить при различных состояниях */
 .link-add-object {
     border: 2px solid rgb(1, 148, 1);
     background: rgb(78, 212, 0);

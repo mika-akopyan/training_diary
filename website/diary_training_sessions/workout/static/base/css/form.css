@@ -1,9 +1,11 @@
+/* Шрифт для меток */
 .form__label {
     font-family: 'Bahnschrift';
     font-weight: 600;
     font-stretch: semi-condensed;
 }
 
+/* Шрифт для полей ввода */
 .form__input {
     font-family: 'Bahnschrift';
     font-weight: 300;

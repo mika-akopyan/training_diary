@@ -1,10 +1,12 @@
 @import '../../base/css/form.css';
 
+/* Шрифт для заголовка страницы */
 h1 {
     font-family: 'Bahnschrift';
     font-weight: 600;
 }
 
+/* Шрифт для кнопок */
 .form__edit-object,
 .form__delete-object {
     font-family: 'Bahnschrift';
@@ -12,14 +14,21 @@ h1 {
     font-stretch: semi-condensed;
 }
 
+/* Расположение кнопок */
 .form__edit-object,
 .form__delete-object {
     padding: 7px;
 }
 
-.form__edit-object {
+/* Общий внешний вид кнопки и ссылки */
+.form__edit-object,
+.form__delete-object {
     border: 2px solid rgb(0, 63, 190);
     border-radius: 4px;
+}
+
+/* Внешний вид кнопки редактировать при различных состояниях */
+.form__edit-object {
     background: rgb(26, 101, 252);
     color: white;
 }
@@ -32,9 +41,8 @@ h1 {
     background: rgb(0, 63, 190);
 }
 
+/* Внешний вид ссылки удалить при различных состояниях */
 .form__delete-object {
-    border: 2px solid rgb(0, 63, 190);
-    border-radius: 4px;
     background: white;
     color: rgb(0, 63, 190);
     text-decoration: none;

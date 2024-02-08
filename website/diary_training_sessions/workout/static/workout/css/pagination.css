@@ -1,9 +1,11 @@
+/* Шрифт для пагинации */
 .pagination__page-link {
     font-family: 'Bahnschrift';
     font-weight: 600;
     font-stretch: semi-condensed;
 }
 
+/* Расположение пагинации */
 .pagination-wrapper {
     text-align: center;
 }
@@ -16,17 +18,20 @@
     padding: 10px;
 }
 
+/* Внешний вид пагинации */
 .pagination {
     border-radius: 7px;
     background: rgb(255, 255, 255);
     box-shadow: 0 0 5px rgb(180, 180, 180);
 }
 
+/* Расположение элементов пагинации */
 .pagination__page-link {
     margin-left: 2px;
     padding: 5px;
 }
 
+/* Внешний вид элементов пагинации при различных состояниях */
 .pagination__page-link {
     color: rgb(0, 63, 190);
     text-decoration: none;
