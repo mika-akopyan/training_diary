@@ -12,3 +12,20 @@ h1 {
     font-weight: 600;
     font-stretch: semi-condensed;
 }
+
+/* Внешний вид ссылки добавить при различных состояниях */
+.form__add-object {
+    border: 2px solid rgb(1, 148, 1);
+    border-radius: 4px;
+    background: rgb(78, 212, 0);
+    color: white;
+    text-decoration: none;
+}
+
+.form__add-object:hover {
+    box-shadow: 0 0 15px rgb(116, 253, 82);
+}
+
+.form__add-object:active {
+    background: rgb(1, 148, 1);
+}
