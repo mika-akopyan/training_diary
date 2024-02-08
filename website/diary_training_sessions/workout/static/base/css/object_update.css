@@ -5,10 +5,16 @@ h1 {
     font-weight: 600;
 }
 
-.form__edit-object {
+.form__edit-object,
+.form__delete-object {
     font-family: 'Bahnschrift';
     font-weight: 600;
     font-stretch: semi-condensed;
+}
+
+.form__edit-object,
+.form__delete-object {
+    padding: 7px;
 }
 
 .form__edit-object {
@@ -24,4 +30,20 @@ h1 {
 
 .form__edit-object:active {
     background: rgb(0, 63, 190);
+}
+
+.form__delete-object {
+    border: 2px solid rgb(0, 63, 190);
+    border-radius: 4px;
+    background: white;
+    color: rgb(0, 63, 190);
+    text-decoration: none;
+}
+
+.form__delete-object:hover {
+    box-shadow: 0 0 15px rgb(48, 155, 255);
+}
+
+.form__delete-object:active {
+    background: rgb(180, 180, 180);
 }

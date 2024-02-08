@@ -16,6 +16,7 @@
         {% for f in form %}
             <p><label class='form__label' for="{{ f.id_for_label }}">{{ f.label }}:</label>{{ f }}</p>
         {% endfor %}
+        <a class='form__delete-object' href=''><i class="bi bi-trash-fill"></i> Удалить</a>
         <button class='form__edit-object' type="submit"><i class="bi bi-pencil-fill"></i> Редактировать</button>
     </form>
 {% endblock content %}
