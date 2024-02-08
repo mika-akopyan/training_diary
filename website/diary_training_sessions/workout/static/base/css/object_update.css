@@ -10,3 +10,18 @@ h1 {
     font-weight: 600;
     font-stretch: semi-condensed;
 }
+
+.form__edit-object {
+    border: 2px solid rgb(0, 63, 190);
+    border-radius: 4px;
+    background: rgb(26, 101, 252);
+    color: white;
+}
+
+.form__edit-object:hover {
+    box-shadow: 0 0 15px rgb(48, 155, 255);
+}
+
+.form__edit-object:active {
+    background: rgb(0, 63, 190);
+}
