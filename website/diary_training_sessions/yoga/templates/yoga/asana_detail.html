@@ -17,5 +17,6 @@
     {% else %}
         <p class='asana__technique-execution object__technique-execution'>{{ asana.technique_execution }}</p>
     {% endif %}
+    <a class='asana__link-delete object__link-delete' href="{% url "yoga:asana_delete" asana.pk %}">Удалить</a>
     <a class='asana__link-edit object__link-edit' href="{% url "yoga:asana_update" asana.pk %}">Редактировать</a>
 {% endblock content %}

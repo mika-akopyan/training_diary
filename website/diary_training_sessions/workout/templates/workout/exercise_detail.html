@@ -17,5 +17,6 @@
     {% else %}
         <p class='exercise__technique-execution object__technique-execution'>{{ exercise.technique_execution|linebreaks }}</p>
     {% endif %}
+    <a class='exercise__link-delete object__link-delete' href="{% url "workout:exercise_delete" exercise.pk %}">Удалить</a>
     <a class='exercise__link-edit object__link-edit' href="{% url "workout:exercise_update" exercise.pk %}">Редактировать</a>
 {% endblock content %}
