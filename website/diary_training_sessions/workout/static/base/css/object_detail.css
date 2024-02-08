@@ -1,0 +1,12 @@
+.object__name,
+.object__link-edit {
+    font-family: 'Bahnschrift';
+    font-weight: 600;
+    font-stretch: semi-condensed;
+}
+
+p {
+    font-family: 'Bahnschrift';
+    font-weight: 300;
+    font-stretch: semi-condensed;
+}

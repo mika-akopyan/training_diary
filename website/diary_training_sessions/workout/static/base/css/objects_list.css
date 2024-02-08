@@ -1,3 +1,23 @@
+h1 {
+    font-family: 'Bahnschrift';
+    font-weight: 600;
+}
+
+.link-add-object,
+.object__name,
+.actions__link-delete,
+.actions__link-edit {
+    font-family: 'Bahnschrift';
+    font-weight: 600;
+    font-stretch: semi-condensed;
+}
+
+p {
+    font-family: 'Bahnschrift';
+    font-weight: 300;
+    font-stretch: semi-condensed;
+}
+
 .object__name {
     margin-top: 0px;
 }

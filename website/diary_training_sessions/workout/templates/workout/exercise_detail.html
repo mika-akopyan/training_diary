@@ -1,17 +1,21 @@
 {% extends "main/base.html" %}
 
+{% load static %}
+
 {% block title %}{{ exercise.exercise }}{% endblock title %}
 
-{% block link %}{% endblock link %}
+{% block link %}
+    <link rel="stylesheet" href="{% static "workout/css/exercise_detail.css" %}">
+{% endblock link %}
 
 {% block content %}
     {% comment %} Отображение упражнения и доп информации о нем {% endcomment %}
-    <h3>{{ exercise.exercise }}</h3>
+    <h3 class='exercise__name object__name'>{{ exercise.exercise }}</h3>
     <p><em>Техника выполнения:</em></p>
     {% if not exercise.technique_execution %}
-        <p>Отсутствует техника выполнения.</p>
+        <p class='exercise__technique-execution object__technique-execution'>Отсутствует техника выполнения.</p>
     {% else %}
-        <p>{{ exercise.technique_execution|linebreaks }}</p>
+        <p class='exercise__technique-execution object__technique-execution'>{{ exercise.technique_execution|linebreaks }}</p>
     {% endif %}
-    <a href="{% url "workout:exercise_update" exercise.pk %}">Редактировать</a>
+    <a class='exercise__link-edit object__link-edit' href="{% url "workout:exercise_update" exercise.pk %}">Редактировать</a>
 {% endblock content %}

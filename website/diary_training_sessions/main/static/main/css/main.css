@@ -6,15 +6,15 @@ body {
     padding: 0px;
 }
 
-html,
-body,
-.form-add__button {
-    font-family: 'Bahnschrift';
-    font-size: 15px;
-}
-
 body {
     background: rgb(240, 240, 240);
+}
+
+.menu__item,
+.menu__item-link {
+    font-family: 'Bahnschrift';
+    font-weight: 600;
+    font-stretch: semi-condensed;
 }
 
 aside {

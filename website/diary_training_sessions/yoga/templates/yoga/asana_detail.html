@@ -1,17 +1,21 @@
 {% extends "main/base.html" %}
 
+{% load static %}
+
 {% block title %}{{ asana.asana }}{% endblock title %}
 
-{% block link %}{% endblock link %}
+{% block link %}
+    <link rel="stylesheet" href="{% static "yoga/css/asana_detail.css" %}">
+{% endblock link %}
 
 {% block content %}
     {% comment %} Отображение асаны и доп информации о ней {% endcomment %}
-    <h3>{{ asana.asana }}</h3>
+    <h3 class='asana__name object__name'>{{ asana.asana }}</h3>
     <p><em>Техника выполнения:</em></p>
     {% if not asana.technique_execution %}
-        <p>Отсутствует техника выполнения.</p>
+        <p class='asana__technique-execution object__technique-execution'>Отсутствует техника выполнения.</p>
     {% else %}
-        <p>{{ asana.technique_execution }}</p>
+        <p class='asana__technique-execution object__technique-execution'>{{ asana.technique_execution }}</p>
     {% endif %}
-    <a href="{% url "yoga:asana_update" asana.pk %}">Редактировать</a>
+    <a class='asana__link-edit object__link-edit' href="{% url "yoga:asana_update" asana.pk %}">Редактировать</a>
 {% endblock content %}

@@ -19,7 +19,7 @@
             <h3 class='exercise__name object__name'><a href="{{ exercise.get_absolute_url }}">{{ exercise.exercise }}</a></h3>
             <p><em>Техника выполнения:</em></p>
             {% if not exercise.technique_execution %}
-                <p>Отсутствует техника выполнения.</p>
+                <p class='exercise__technique-execution object__technique-execution'>Отсутствует техника выполнения.</p>
             {% else %}
                 <p class='exercise__technique-execution object__technique-execution'>{{ exercise.technique_execution|linebreaks|truncatewords:30 }}</p>
             {% endif %}

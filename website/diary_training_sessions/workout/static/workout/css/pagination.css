@@ -1,3 +1,9 @@
+.pagination__page-link {
+    font-family: 'Bahnschrift';
+    font-weight: 600;
+    font-stretch: semi-condensed;
+}
+
 .pagination-wrapper {
     text-align: center;
 }
