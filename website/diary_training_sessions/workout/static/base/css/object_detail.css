@@ -29,7 +29,7 @@ p {
 /* ССЫЛКА РЕДАКТИРОВАТЬ */
 /* Внешний вид при различных состояниях */
 .object__link-edit {
-    border: 2px solid rgb(0, 63, 190);
+    border: 2px solid rgb(26, 101, 252);
     background: rgb(26, 101, 252);
     color: white;
 }
@@ -39,15 +39,16 @@ p {
 }
 
 .object__link-edit:active {
+    border: 2px solid rgb(0, 63, 190);
     background: rgb(0, 63, 190);
 }
 
 /* ССЫЛКА УДАЛИТЬ */
 /* Внешний вид при различных состояниях */
 .object__link-delete {
-    border: 2px solid rgb(0, 63, 190);
+    border: 2px solid rgb(26, 101, 252);
     background: white;
-    color: rgb(0, 63, 190);
+    color: rgb(26, 101, 252);
 }
 
 .object__link-delete:hover {
