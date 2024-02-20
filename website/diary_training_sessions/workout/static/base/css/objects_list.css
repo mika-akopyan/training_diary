@@ -27,7 +27,6 @@ p {
 
 /* Внешний вид при различных состояниях */
 .object__name-link {
-    /* Внешний вид */
     color: black;
     text-decoration: none;
 }
@@ -55,10 +54,7 @@ p {
 /* КОНТЕЙНЕР С ДЕЙСТВИЯМИ НАД ОБЪЕКТОМ */
 .object__actions {
     /* Расположение */
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    margin: 10px;
+    text-align: right;
 }
 
 /* ССЫЛКИ С ДЕЙСТВИЯМИ НАД ОБЪЕКТОМ */
@@ -71,6 +67,11 @@ p {
     /* Общий внешний вид */
     border-radius: 4px;
     text-decoration: none;
+}
+
+.actions__link-edit,
+.actions__link-delete {
+    display: inline-block;
 }
 
 /* ССЫЛКА РЕДАКТИРОВАТЬ */
