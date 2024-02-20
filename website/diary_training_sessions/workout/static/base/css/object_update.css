@@ -6,28 +6,27 @@ h1 {
     font-weight: 600;
 }
 
-/* Шрифт для кнопок */
+/* КНОПКИ */
 .form__edit-object,
 .form__delete-object {
+    /* Шрифт */
     font-family: 'Bahnschrift';
     font-weight: 600;
     font-stretch: semi-condensed;
 }
 
-/* Расположение кнопок */
 .form__edit-object,
 .form__delete-object {
+    /* Расположение */
     padding: 7px;
-}
-
-/* Общий внешний вид кнопки и ссылки */
-.form__edit-object,
-.form__delete-object {
+    
+    /* Общий внешний вид */
     border: 2px solid rgb(0, 63, 190);
     border-radius: 4px;
 }
 
-/* Внешний вид кнопки редактировать при различных состояниях */
+/* КНОПКА РЕДАКТИРОВАТЬ */
+/* Внешний вид при различных состояниях */
 .form__edit-object {
     background: rgb(26, 101, 252);
     color: white;
@@ -41,7 +40,8 @@ h1 {
     background: rgb(0, 63, 190);
 }
 
-/* Внешний вид ссылки удалить при различных состояниях */
+/* ССЫЛКА УДАЛИТЬ */
+/* Внешний вид при различных состояниях */
 .form__delete-object {
     background: white;
     color: rgb(0, 63, 190);

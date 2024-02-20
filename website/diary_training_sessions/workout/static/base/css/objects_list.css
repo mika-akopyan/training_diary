@@ -19,52 +19,51 @@ p {
     font-stretch: semi-condensed;
 }
 
-/* Расположение имени объекта */
+/* ИМЯ ОБЪЕКТА */
 .object__name {
+    /* Расположение */
     margin-top: 0px;
 }
 
-/* Расположение контейнера с описанием объекта */
+/* КОНТЕЙНЕР С ОПИСАНИЕМ ОБЪЕКТА */
 .object {
+    /* Расположение */
     position: relative;
     left: 0px;
     top: 0px;
     margin: 10px;
     margin-left: 0px;
     padding: 15px;
-}
-
-/* Внешний вид контейнера с описанием объекта */
-.object {
+    
+    /* Внешний вид */
     border-radius: 7px;
     background: rgb(255, 255, 255);
     box-shadow: 0 0 5px rgb(180, 180, 180);
 }
 
-/* Расположение контейнера с действиями над объектом */
+/* КОНТЕЙНЕР С ДЕЙСТВИЯМИ НАД ОБЪЕКТОМ */
 .object__actions {
+    /* Расположение */
     position: absolute;
     right: 0px;
     bottom: 0px;
     margin: 10px;
 }
 
-/* Общее расположение ссылок с действиями над объектом */
+/* ССЫЛКИ С ДЕЙСТВИЯМИ НАД ОБЪЕКТОМ */
 .actions__link-edit,
 .actions__link-delete,
 .link-add-object {
+    /* Общее расположение */
     padding: 7px;
-}
-
-/* Общий внешний вид для ссылок с действиями над объектом */
-.actions__link-edit,
-.actions__link-delete,
-.link-add-object {
+    
+    /* Общий внешний вид */
     border-radius: 4px;
     text-decoration: none;
 }
 
-/* Внешний вид ссылки редактировать при различных состояниях */
+/* ССЫЛКА РЕДАКТИРОВАТЬ */
+/* Внешний вид при различных состояниях */
 .actions__link-edit {
     border: 2px solid rgb(0, 63, 190);
     background: rgb(26, 101, 252);
@@ -79,7 +78,8 @@ p {
     background: rgb(0, 63, 190);
 }
 
-/* Внешний вид ссылки удалить при различных состояниях */
+/* ССЫЛКА УДАЛИТЬ */
+/* Внешний вид при различных состояниях */
 .actions__link-delete {
     border: 2px solid rgb(0, 63, 190);
     background: white;
@@ -94,7 +94,8 @@ p {
     background: rgb(180, 180, 180);
 }
 
-/* Внешний вид ссылки добавить при различных состояниях */
+/* ССЫЛКА ДОБАВИТЬ */
+/* Внешний вид при различных состояниях */
 .link-add-object {
     border: 2px solid rgb(1, 148, 1);
     background: rgb(78, 212, 0);

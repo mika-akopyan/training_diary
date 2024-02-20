@@ -1,4 +1,5 @@
-/* Шрифт для элементов страницы */
+/* ОБЩЕЕ */
+/* Шрифт */
 .object__name,
 .object__link-edit,
 .object__link-delete {
@@ -13,20 +14,19 @@ p {
     font-stretch: semi-condensed;
 }
 
-/* Общее расположение ссылок с действиями над объектом */
+/* ССЫЛКИ С ДЕЙСТВИЯМИ НАД ОБЪЕКТОМ */
 .object__link-edit,
 .object__link-delete {
+    /* Общее расположение */
     padding: 7px;
-}
-
-/* Общий внешний вид для ссылок с действиями над объектом */
-.object__link-edit,
-.object__link-delete {
+    
+    /* Общий внешний вид для */
     border-radius: 4px;
     text-decoration: none;
 }
 
-/* Внешний вид ссылки редактировать при различных состояниях */
+/* ССЫЛКА РЕДАКТИРОВАТЬ */
+/* Внешний вид при различных состояниях */
 .object__link-edit {
     border: 2px solid rgb(0, 63, 190);
     background: rgb(26, 101, 252);
@@ -41,7 +41,8 @@ p {
     background: rgb(0, 63, 190);
 }
 
-/* Внешний вид ссылки удалить при различных состояниях */
+/* ССЫЛКА УДАЛИТЬ */
+/* Внешний вид при различных состояниях */
 .object__link-delete {
     border: 2px solid rgb(0, 63, 190);
     background: white;

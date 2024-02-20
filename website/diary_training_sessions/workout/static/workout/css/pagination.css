@@ -1,37 +1,39 @@
-/* Шрифт для пагинации */
-.pagination__page-link {
-    font-family: 'Bahnschrift';
-    font-weight: 600;
-    font-stretch: semi-condensed;
-}
-
-/* Расположение пагинации */
+/* КОНТЕЙНЕР С ПАГИНАЦИЕЙ */
 .pagination-wrapper {
+    /* Расположение */
     text-align: center;
 }
 
+/* ПАГИНАЦИЯ */
 .pagination {
+    /* Расположение */
     display: inline-block;
     height: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
-}
-
-/* Внешний вид пагинации */
-.pagination {
+    
+    /* Внешний вид */
     border-radius: 7px;
     background: rgb(255, 255, 255);
     box-shadow: 0 0 5px rgb(180, 180, 180);
 }
 
-/* Расположение элементов пагинации */
+/* ЭЛЕМЕНТЫ ПАГИНАЦИИ */
 .pagination__page-link {
+    /* Шрифт */
+    font-family: 'Bahnschrift';
+    font-weight: 600;
+    font-stretch: semi-condensed;
+}
+
+.pagination__page-link {
+    /* Расположение */
     margin-left: 2px;
     padding: 5px;
 }
 
-/* Внешний вид элементов пагинации при различных состояниях */
+/* Внешний вид при различных состояниях */
 .pagination__page-link {
     color: rgb(0, 63, 190);
     text-decoration: none;

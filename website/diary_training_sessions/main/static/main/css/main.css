@@ -10,47 +10,49 @@ body {
     background: rgb(240, 240, 240);
 }
 
-/* Шрифт для элементов меню */
+/* БОКОВАЯ ПАНЕЛЬ */
+aside {
+    /* Расположение*/
+    min-height: 100%;
+    width: 230px;
+    margin: 10px;
+    position: fixed;
+
+    /* Внешний вид*/
+    border-radius: 7px;
+    background: rgb(26, 101, 252);
+}
+
+/* ОСНОВНОЙ КОНТЕНТ */
+main {
+    /* Расположение */
+    margin-left: 260px;
+}
+
+/* МЕНЮ */
+.menu {
+    /* Внешний вид */
+    list-style: none;
+}
+
+/* ЭЛЕМЕНТЫ МЕНЮ */
 .menu__item,
 .menu__item-link {
+    /* Шрифт */
     font-family: 'Bahnschrift';
     font-weight: 600;
     font-stretch: semi-condensed;
 }
 
-/* Расположение боковой панели */
-aside {
-    min-height: 100%;
-    width: 230px;
-    margin: 10px;
-    position: fixed;
-}
-
-/* Внешний вид боковой панели */
-aside {
-    border-radius: 7px;
-    background: rgb(26, 101, 252);
-}
-
-/* Расположение основного контента */
-main {
-    margin-left: 260px;
-}
-
-/* Внешний вид всего меню */
-.menu {
-    list-style: none;
-}
-
-/* Расположение элементов меню */
 .menu__item,
 .menu__item-link {
+    /* Расположение */
     display: block;
     width: 100px;
     margin-top: 10px;
 }
 
-/* Внешинй вид элементов меню при различных состояниях */
+/* Внешинй вид при различных состояниях */
 .menu__item,
 .menu__item-link {
     color: rgb(255, 255, 255);
