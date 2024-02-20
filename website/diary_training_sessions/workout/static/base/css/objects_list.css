@@ -25,6 +25,17 @@ p {
     margin-top: 0px;
 }
 
+/* Внешний вид при различных состояниях */
+.object__name-link {
+    /* Внешний вид */
+    color: black;
+    text-decoration: none;
+}
+
+.object__name-link:hover {
+    text-decoration: underline;
+}
+
 /* КОНТЕЙНЕР С ОПИСАНИЕМ ОБЪЕКТА */
 .object {
     /* Расположение */

@@ -16,7 +16,7 @@
     {% comment %} Отображение упражнений и доп информации о них {% endcomment %}
     {% for exercise in exercises %}
         <div class="exercise object">
-            <h3 class='exercise__name object__name'><a href="{{ exercise.get_absolute_url }}">{{ exercise.exercise }}</a></h3>
+            <h3 class='exercise__name object__name'><a class='object__name-link' href="{{ exercise.get_absolute_url }}">{{ exercise.exercise }}</a></h3>
             <p><em>Техника выполнения:</em></p>
             {% if not exercise.technique_execution %}
                 <p class='exercise__technique-execution object__technique-execution'>Отсутствует техника выполнения.</p>

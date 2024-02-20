@@ -16,7 +16,7 @@
     {% comment %} Отображение асан и доп информации о них {% endcomment %}
     {% for asana in asanas %}
         <div class="asana object">
-            <h3 class='asana__name object__name'><a href="{{ asana.get_absolute_url }}">{{ asana.asana }}</a></h3>
+            <h3 class='asana__name object__name'><a class='object__name-link' href="{{ asana.get_absolute_url }}">{{ asana.asana }}</a></h3>
             <p><em>Техника выполнения:</em></p>
             {% if not asana.technique_execution %}
                 <p class='asana__technique-execution object__technique-execution'>Отсутствует техника выполнения.</p>
