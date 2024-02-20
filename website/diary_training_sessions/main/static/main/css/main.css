@@ -15,11 +15,9 @@ aside {
     /* Расположение*/
     min-height: 100%;
     width: 230px;
-    margin: 10px;
     position: fixed;
 
     /* Внешний вид*/
-    border-radius: 7px;
     background: rgb(26, 101, 252);
 }
 
