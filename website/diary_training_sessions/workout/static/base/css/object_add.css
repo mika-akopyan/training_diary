@@ -1,11 +1,5 @@
 @import '../../base/css/form.css';
 
-/* Шрифт для заголовка страницы */
-h1 {
-    font-family: 'Bahnschrift';
-    font-weight: 600;
-}
-
 /* ССЫЛКА ДОБАВИТЬ */
 .form__add-object {
     /* Шрифт */

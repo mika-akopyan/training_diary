@@ -1,9 +1,34 @@
+/* ФОРМА */
+.form {
+    /* Расположение */
+    display: inline-block;
+    padding: 15px;
+
+    /* Внешний вид */
+    border: 1px solid rgb(120, 120, 120);;
+    border-radius: 7px;
+}
+
+/* ЗАГОЛОВОК */
+.form__header {
+    /* Шрифт */
+    font-family: 'Bahnschrift';
+    font-weight: 600;
+}
+
 /* МЕТКИ */
-.form__label {
+/* ПОДСКАЗКА */
+.form__label,
+.form__hint {
     /* Шрифт */
     font-family: 'Bahnschrift';
     font-weight: 600;
     font-stretch: semi-condensed;
+}
+
+.form__label {
+    /* Внешний вид */
+    color: rgb(80, 80, 80);
 }
 
 /* ПОЛЯ ВВОДА */
@@ -12,4 +37,10 @@
     font-family: 'Bahnschrift';
     font-weight: 300;
     font-stretch: semi-condensed; 
+}
+
+.form__input {
+    /* Внешний вид */
+    border: 1px solid rgb(120, 120, 120);
+    border-radius: 3px;
 }
