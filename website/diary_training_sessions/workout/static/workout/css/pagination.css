@@ -25,20 +25,17 @@
     font-family: 'Bahnschrift';
     font-weight: 600;
     font-stretch: semi-condensed;
-}
 
-.pagination__page-link {
     /* Расположение */
     margin-left: 2px;
     padding: 5px;
-}
 
-/* Внешний вид при различных состояниях */
-.pagination__page-link {
+    /* Внешний вид */
     color: rgb(0, 63, 190);
     text-decoration: none;
 }
 
+/* Внешний вид при различных состояниях */
 .pagination__page-link:hover {
     text-decoration: underline;
 }

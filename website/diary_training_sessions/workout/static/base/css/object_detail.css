@@ -1,14 +1,15 @@
 /* ОБЩЕЕ */
-/* Шрифт */
 .object__name,
 .object__link-edit,
 .object__link-delete {
+    /* Шрифт */
     font-family: 'Bahnschrift';
     font-weight: 600;
     font-stretch: semi-condensed;
 }
 
 p {
+    /* Шрифт */
     font-family: 'Bahnschrift';
     font-weight: 300;
     font-stretch: semi-condensed;

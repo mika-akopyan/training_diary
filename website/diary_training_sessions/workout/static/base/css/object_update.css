@@ -7,10 +7,7 @@
     font-family: 'Bahnschrift';
     font-weight: 600;
     font-stretch: semi-condensed;
-}
 
-.form__edit-object,
-.form__delete-object {
     /* Расположение */
     padding: 7px;
     

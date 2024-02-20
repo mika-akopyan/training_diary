@@ -42,22 +42,17 @@ main {
     font-family: 'Bahnschrift';
     font-weight: 600;
     font-stretch: semi-condensed;
-}
 
-.menu__item,
-.menu__item-link {
     /* Расположение */
     display: block;
     width: 100px;
     margin-top: 10px;
-}
-
-/* Внешинй вид при различных состояниях */
-.menu__item,
-.menu__item-link {
+    
+    /* Внешинй вид */
     color: rgb(255, 255, 255);
 }
 
+/* Внешинй вид при различных состояниях */
 .menu__item-link:hover {
     background: rgb(255, 255, 255);
     color: rgb(26, 101, 252);

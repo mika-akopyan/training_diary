@@ -37,9 +37,7 @@
     font-family: 'Bahnschrift';
     font-weight: 300;
     font-stretch: semi-condensed; 
-}
-
-.form__input {
+    
     /* Внешний вид */
     border: 1px solid rgb(120, 120, 120);
     border-radius: 3px;
