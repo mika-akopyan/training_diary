@@ -16,10 +16,18 @@
     font-weight: 600;
 }
 
+/* ГРИД-КОНТЕЙНЕР ДЛЯ МЕТОК И ПОЛЕЙ */
+.grid-container {
+    /* Расположение */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 15px;
+    margin-bottom: 10px;
+}
+
 /* МЕТКИ */
 /* ПОДСКАЗКА */
-.form__label,
-.form__hint {
+.form__label {
     /* Шрифт */
     font-family: 'Bahnschrift';
     font-weight: 600;

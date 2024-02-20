@@ -13,9 +13,11 @@
     <form class='form' action="" method="post">
         {% csrf_token %}
         <h1 class='form__header'>Редактирование асаны</h1>
-        {% for f in form %}
-            <p><label class='form__label' for="{{ f.id_for_label }}">{{ f.label }}:</label>{{ f }}</p>
-        {% endfor %}
+        <div class="grid-container">
+            {% for f in form %}
+                <label class='form__label' for="{{ f.id_for_label }}">{{ f.label }}:</label>{{ f }}
+            {% endfor %}
+        </div>
         <a class='form__delete-object' href=''><i class="bi bi-trash-fill"></i> Удалить</a>
         <button class='form__edit-object' type="submit"><i class="bi bi-save"></i> Сохранить изменения</button>
     </form>
