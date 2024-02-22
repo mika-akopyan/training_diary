@@ -10,6 +10,19 @@ body {
     background: rgb(240, 240, 240);
 }
 
+/* ШАПКА САЙТА */
+header {
+    /* Расположение */
+    position: relative;
+    left: 230px;
+    height: 50px;
+    width: calc(100% - 230px);
+
+    /* Внешний вид */
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgb(180, 180, 180);
+}
+
 /* БОКОВАЯ ПАНЕЛЬ */
 aside {
     /* Расположение*/
