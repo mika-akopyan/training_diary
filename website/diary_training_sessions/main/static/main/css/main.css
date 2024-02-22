@@ -25,6 +25,37 @@ header {
     box-shadow: 0 0 5px rgb(180, 180, 180);
 }
 
+/* КОНТЕЙНЕР С АУТЕНТИФИКАЦИЕЙ */
+.authentication {
+    /* Расположение */
+    margin: 15px;
+    text-align: right;
+}
+
+/* ЭЛЕМЕНТЫ КОНТЕЙНЕРА АУТЕНТИФИКАЦИЯ */
+.authentication__item {
+    /* Шрифт */
+    font-family: 'Bahnschrift';
+    font-weight: 600;
+    font-stretch: semi-condensed;
+
+    /* Внешний вид */
+    color: rgb(26, 101, 252);
+}
+
+/* Внешний вид элементов при различных состояниях */
+.authentication__registration,
+.authentication__login,
+.authentication__logout {
+    text-decoration: none;
+}
+
+.authentication__registration:hover,
+.authentication__login:hover,
+.authentication__logout:hover {
+    text-decoration: underline;
+}
+
 /* БОКОВАЯ ПАНЕЛЬ */
 aside {
     /* Расположение*/
