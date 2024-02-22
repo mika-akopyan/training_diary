@@ -1,7 +1,8 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, redirect
 from django.views.generic import CreateView
 from django.urls import reverse_lazy
 from django.contrib.auth.views import LoginView
+from django.contrib.auth import logout
 
 from .forms import *
 
@@ -22,3 +23,8 @@ class UserAuthenticationView(LoginView):
     form_class = UserAuthenticationForm
     template_name = 'main/user_authentication.html'
     context_object_name = 'form'
+
+
+def logout_user(request):
+    logout(request)
+    return redirect('home')
