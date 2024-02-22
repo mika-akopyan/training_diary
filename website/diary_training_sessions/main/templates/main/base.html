@@ -11,9 +11,15 @@
 </head>
 <body>
     <header>
-        <a href="{% url "user_registration" %}">Регистрация</a>
-        <span>|</span>
-        <a href="{% url "user_authentication" %}">Войти</a>
+        {% if request.user.is_authenticated %}
+            <span>{{ user.username }}</span>
+            <span>|</span>
+            <a href="">Выйти</a>
+        {% else %}
+            <a href="{% url "user_registration" %}">Регистрация</a>
+            <span>|</span>
+            <a href="{% url "user_authentication" %}">Войти</a>
+        {% endif %}
     </header>
     
     <aside>
