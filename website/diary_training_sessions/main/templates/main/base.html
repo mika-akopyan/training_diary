@@ -18,7 +18,7 @@
                 <span class='authentication__vertical-line authentication__item'>|</span>
                 <a class='authentication__logout authentication__item' href="{% url "logout_user" %}">Выйти</a>
             {% else %}
-                <a class='authentication__registration authentication__item' href="{% url "user_registration" %}">Регистрация</a>
+                <a class='authentication__registration authentication__item' href="{% url "registration" %}">Регистрация</a>
                 <span class='authentication__vertical-line authentication__item'>|</span>
                 <a class='authentication__login authentication__item' href="{% url "user_authentication" %}">Войти</a>
             {% endif %}

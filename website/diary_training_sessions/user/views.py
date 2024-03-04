@@ -10,9 +10,9 @@ from .forms import *
 
 # Create your views here.
 
-class UserRegistrationView(CreateView):
-    form_class = UserRegistrationForm
-    template_name = 'user/user_registration.html'
+class RegistrationView(CreateView):
+    form_class = RegistrationForm
+    template_name = 'user/registration.html'
     context_object_name = 'form'
     success_url = reverse_lazy('home')
 
