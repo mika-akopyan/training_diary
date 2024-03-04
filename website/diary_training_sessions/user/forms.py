@@ -20,7 +20,7 @@ class RegistrationForm(UserCreationForm):
         fields = ["username", "password1", "password2"]
 
 
-class UserAuthenticationForm(AuthenticationForm):
+class AuthorizationForm(AuthenticationForm):
     username = forms.CharField(
         label="Имя пользователя", widget=forms.TextInput(attrs={"class": "form__input"})
     )

@@ -10,24 +10,25 @@ from .forms import *
 
 # Create your views here.
 
+
 class RegistrationView(CreateView):
     form_class = RegistrationForm
-    template_name = 'user/registration.html'
-    context_object_name = 'form'
-    success_url = reverse_lazy('home')
+    template_name = "user/registration.html"
+    context_object_name = "form"
+    success_url = reverse_lazy("home")
 
     def form_valid(self, form: BaseModelForm) -> HttpResponse:
         user = form.save()
         login(self.request, user)
-        return redirect('home')
+        return redirect("home")
 
 
-class UserAuthenticationView(LoginView):
-    form_class = UserAuthenticationForm
-    template_name = 'user/user_authentication.html'
-    context_object_name = 'form'
+class AuthorizationView(LoginView):
+    form_class = AuthorizationForm
+    template_name = "user/authorization.html"
+    context_object_name = "form"
 
 
 def logout_user(request):
     logout(request)
-    return redirect('home')
+    return redirect("home")
