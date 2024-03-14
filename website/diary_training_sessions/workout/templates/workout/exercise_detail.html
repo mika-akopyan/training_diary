@@ -10,13 +10,15 @@
 
 {% block content %}
     {% comment %} Отображение упражнения и доп информации о нем {% endcomment %}
-    <h3 class='exercise__name object__name'>{{ exercise.exercise }}</h3>
-    <p><em>Техника выполнения:</em></p>
-    {% if not exercise.technique_execution %}
-        <p class='exercise__technique-execution object__technique-execution'>Отсутствует техника выполнения.</p>
-    {% else %}
-        <p class='exercise__technique-execution object__technique-execution'>{{ exercise.technique_execution|linebreaks }}</p>
-    {% endif %}
-    <a class='exercise__link-delete object__link-delete' href="{% url "workout:exercise_delete" exercise.pk %}"><i class="bi bi-trash-fill"></i> Удалить</a>
-    <a class='exercise__link-edit object__link-edit' href="{% url "workout:exercise_update" exercise.pk %}"><i class="bi bi-pencil-fill"></i> Редактировать</a>
+    <div class="exercise object">
+        <h3 class='exercise__name object__name'>{{ exercise.exercise }}</h3>
+        <p><em>Техника выполнения:</em></p>
+        {% if not exercise.technique_execution %}
+            <p class='exercise__technique-execution object__technique-execution'>Отсутствует техника выполнения.</p>
+        {% else %}
+            <p class='exercise__technique-execution object__technique-execution'>{{ exercise.technique_execution|linebreaks }}</p>
+        {% endif %}
+        <a class='exercise__link-delete object__link-delete' href="{% url "workout:exercise_delete" exercise.pk %}"><i class="bi bi-trash-fill"></i> Удалить</a>
+        <a class='exercise__link-edit object__link-edit' href="{% url "workout:exercise_update" exercise.pk %}"><i class="bi bi-pencil-fill"></i> Редактировать</a>
+    </div> 
 {% endblock content %}

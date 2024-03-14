@@ -15,6 +15,25 @@ p {
     font-stretch: semi-condensed;
 }
 
+/* КОНТЕЙНЕР С ОПИСАНИЕМ ОБЪЕКТА */
+.object {
+    /* Расположение */
+    margin: 10px;
+    margin-left: 0px;
+    padding: 15px;
+    
+    /* Внешний вид */
+    border-radius: 7px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgb(180, 180, 180);
+}
+
+/* ИМЯ ОБЪЕКТА */
+.object__name {
+    /* Расположение */
+    margin-top: 0px;
+}
+
 /* ССЫЛКИ С ДЕЙСТВИЯМИ НАД ОБЪЕКТОМ */
 .object__link-edit,
 .object__link-delete {
