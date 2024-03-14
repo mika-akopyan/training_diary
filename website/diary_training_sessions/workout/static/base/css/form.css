@@ -54,3 +54,12 @@
     border: 1px solid rgb(120, 120, 120);
     border-radius: 3px;
 }
+
+/* ОШИБКИ ПОЛЕЙ ВВОДА */
+.form__input-errors {
+    /* Расположение */
+    grid-column: 1 / 3;
+    
+    /* Внешний вид */
+    color: red;
+}

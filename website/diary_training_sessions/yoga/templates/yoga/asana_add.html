@@ -12,12 +12,12 @@
     <form class='form' action="" method="post">
         {% csrf_token %}
         <h1 class='form__header'>Добавление асаны</h1>
-        <div>{{ form.non_field_errors }}</div>
+        <div class='form__errors'>{{ form.non_field_errors }}</div>
         <div class="grid-container">
             {% for f in form %}
                 <label class='form__label' for="{{ f.id_for_label }}">{{ f.label }}:</label>
                 {{ f }}
-                <div>{{ f.errors }}</div>
+                <div class='form__input-errors'>{{ f.errors }}</div>
             {% endfor %}
         </div>
         <button class='form__add-object' type="submit"><i class="bi bi-plus-lg"></i> Добавить асану</button>
