@@ -15,7 +15,7 @@
     {% if not asana.technique_execution %}
         <p class='asana__technique-execution object__technique-execution'>Отсутствует техника выполнения.</p>
     {% else %}
-        <p class='asana__technique-execution object__technique-execution'>{{ asana.technique_execution }}</p>
+        <p class='asana__technique-execution object__technique-execution'>{{ asana.technique_execution|linebreaks }}</p>
     {% endif %}
     <a class='asana__link-delete object__link-delete' href="{% url "yoga:asana_delete" asana.pk %}"><i class="bi bi-trash-fill"></i> Удалить</a>
     <a class='asana__link-edit object__link-edit' href="{% url "yoga:asana_update" asana.pk %}"><i class="bi bi-pencil-fill"></i> Редактировать</a>
