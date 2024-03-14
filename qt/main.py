@@ -2342,21 +2342,8 @@ ui.s_sb_day_number.setValue(ui.w_sb_day_number.value())
 for element in stretching.involved_muscles:
     ui.s_lstw_involved_muscle.addItem(element.name)
 # Асана
-stretching.asanas.clear()
-stretching.asanas._form_dict('asanas', 'Гибкость 1')
 for element in stretching.asanas:
     ui.s_lstw_asana.addItem(element.name)
-ui.s_lstw_asana.takeItem(ui.s_lstw_asana.count() - 1)
-stretching.asanas.clear()
-stretching.asanas._form_dict('asanas', 'Гибкость 2')
-for element in stretching.asanas:
-    ui.s_lstw_asana.addItem(element.name)
-ui.s_lstw_asana.takeItem(ui.s_lstw_asana.count() - 1)
-stretching.asanas.clear()
-stretching.asanas._form_dict('asanas', 'Гибкость 3')
-for element in stretching.asanas:
-    ui.s_lstw_asana.addItem(element.name)
-ui.s_lstw_asana.takeItem(ui.s_lstw_asana.count() - 1)
 # Страница "Просмотр". GroupBox "Этап"
 # Номер недели и номер дня
 form_week_numbers()
