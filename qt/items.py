@@ -171,22 +171,14 @@ class Approach(Element):
     def reps_quantity(self, base_reps_quantity: int) -> int:
         """Возвращает количество повторений"""
         # Вычисление количества повторений во всех подходах в зависимости от базового количества повторений
-        if base_reps_quantity < 14:
+        if base_reps_quantity < 10:
             reps_quantity_warm_up_1 = 12
             reps_quantity_warm_up_2 = 8
             reps_quantity_pre_worker = 4
-        elif base_reps_quantity < 20:
+        elif base_reps_quantity < 15:
             reps_quantity_warm_up_1 = 14
             reps_quantity_warm_up_2 = 10
             reps_quantity_pre_worker = 6
-        elif base_reps_quantity < 26:
-            reps_quantity_warm_up_1 = 16
-            reps_quantity_warm_up_2 = 12
-            reps_quantity_pre_worker = 8
-        elif base_reps_quantity < 31:
-            reps_quantity_warm_up_1 = 18
-            reps_quantity_warm_up_2 = 14
-            reps_quantity_pre_worker = 10
 
         reps_quantity_worker_1 = base_reps_quantity + 2
         reps_quantity_worker_2 = base_reps_quantity
