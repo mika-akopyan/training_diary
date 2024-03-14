@@ -12,9 +12,12 @@
     <form class='form' action="" method="post">
         {% csrf_token %}
         <h1 class='form__header'>Редактирование упражнения</h1>
+        <div>{{ form.non_field_errors }}</div>
         <div class="grid-container">
             {% for f in form %}
-                <label class='form__label' for="{{ f.id_for_label }}">{{ f.label }}:</label>{{ f }}
+                <label class='form__label' for="{{ f.id_for_label }}">{{ f.label }}:</label>
+                {{ f }}
+                <div>{{ f.errors }}</div>
             {% endfor %}
         </div>
         <a class='form__delete-object' href=''><i class="bi bi-trash-fill"></i> Удалить</a>
